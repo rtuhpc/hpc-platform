@@ -11,3 +11,4 @@ HPC User Guide
    :maxdepth: 2
 
    01_waldur.md
+   02_Jupyter_hub.md
