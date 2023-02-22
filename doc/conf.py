@@ -47,7 +47,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'ALDP'
+project = 'RTU HPC'
 copyright = '2023, RTU HPC center'
 author = 'ciko'
 

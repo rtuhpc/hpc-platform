@@ -4,11 +4,11 @@
    table of contents
 
 
-HPC User Guide 
+HPC Platform User Guide 
 ==========
 
 .. toctree::
    :maxdepth: 2
 
    01_waldur.md
-   02_Jupyter_hub.md
+   02_jupyter_hub.md
