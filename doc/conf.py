@@ -28,6 +28,8 @@ sys.path.insert(0, os.path.abspath('../source'))
 #
 # needs_sphinx = '1.0'
 
+html_baseurl = '/hpc-platform'
+
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
