@@ -21,5 +21,6 @@ The central element of the HPC platform is a user-friendly interface for reservi
 
 .. image:: images/platforma.png
   :width: 400
+  :align: center
   :alt: Alternative text
   
