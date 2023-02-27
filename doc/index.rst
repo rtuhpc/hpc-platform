@@ -7,7 +7,7 @@
 HPC Platform User Guide 
 =======================
 
-This page provides instructions for using computing resources and tools available through the HPC platform.
+This page provides instructions for using different tools and interfaces available through the High-performance Computing (HPC) platform.
 
 .. toctree::
    :maxdepth: 2
@@ -17,7 +17,7 @@ This page provides instructions for using computing resources and tools availabl
    02_jupyter_hub.md
    hpc.md
 
-The central element of the platform is a user-friendly interface for computing resource reservation and access. HPC platform includes High-performance Computing (HPC) and virtualization resources, as well as thematic web interfaces for data analysis and visualization.
+The central element of the HPC platform is a user-friendly interface for reserving and accessing computing resources. The platform includes supercomputing and virtualization infrastructure, as well as HPC-enabled thematic web portals for data analysis and visualization.
 
 .. image:: images/platforma.png
   :width: 400
