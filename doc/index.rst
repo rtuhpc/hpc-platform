@@ -7,9 +7,19 @@
 HPC Platform User Guide 
 =======================
 
+This page provides instructions for using computing resources and tools available through the HPC platform.
+
 .. toctree::
    :maxdepth: 2
 
    01_waldur.md
+   galaxy.md
    02_jupyter_hub.md
-   # HPC cluster user guide
+   hpc.md
+
+HPC platform includes High-performance Computing (HPC) and virtualization resources, as well as thematic web interfaces for data analysis and visualization. The central element of the platform is a user-friendly interface for computing resource reservation and access.
+
+.. image:: images/platforma.png
+  :width: 400
+  :alt: Alternative text
+  
