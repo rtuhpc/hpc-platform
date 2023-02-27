@@ -5,10 +5,11 @@
 
 
 HPC Platform User Guide 
-==========
+=======================
 
 .. toctree::
    :maxdepth: 2
 
    01_waldur.md
    02_jupyter_hub.md
+   # HPC cluster user guide
