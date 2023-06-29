@@ -13,7 +13,7 @@ LTI, or Learning Tools Interoperability, is a standard protocol developed by the
 ![](./images/lti-04.png)
 
 ### 2. How does LTI work?
-LTI relies on a simple yet powerful mechanism called "launching." When an instructor selects an external tool within their LMS, the LMS launches it in a separate WEB Browser Frame or Tab. For a result, please take a look at the picture above. LTI passes essential information, such as user identity and context, from the LMS to the tool, allowing it to provide personalized and contextualized learning experiences. This seamless integration eliminates the need for multiple logins or navigating between different platforms.
+LTI relies on a simple yet powerful mechanism called "launching." When an instructor selects an external tool within their LMS, the LMS launches it in a separate WEB Browser Frame or Tab. For a result, please take a look at the screenshot above. LTI passes essential information, such as user identity and context, from the LMS to the tool, allowing it to provide personalized and contextualized learning experiences. This seamless integration eliminates the need for multiple logins or navigating between different platforms.
 
 ### 3. Benefits of LTI for Instructional Designers:
 - Enhanced Tool Selection: LTI opens up a vast ecosystem of educational tools and resources that instructional designers can integrate into their courses. This flexibility allows for more varied and engaging learning experiences.
