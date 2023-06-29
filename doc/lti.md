@@ -94,6 +94,6 @@ The communication between the LTI Consumer (platform), browser, and LTI Tool gen
 ### What is JWT for?
 ![](./images/lti-05.png)
 
-In summary, the communication using JWTs, containing the provided objects is typically sent from the LTI Consumer (platform) to the LTI Tool as part of the launch process, allowing the LTI Tool to receive user context and permissions securely.
+In summary, the JWTs (containing the provided objects) are typically used in communication from the LTI Consumer (platform) to the LTI Tool as part of the launch process, allowing the LTI Tool to receive user context and permissions securely.
 
 *To be continued...*
