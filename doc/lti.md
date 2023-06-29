@@ -77,9 +77,9 @@ LTI 1.3 improves existing services by allowing new extensions to be layered on t
 
 ![](./images/lti-03.png)
 
-The communication between the LTI Consumer (platform), browser, and LTI Tool generally follows these steps (in principle, enumerated items correspond to arrow-like transitions/steps on the diagram above):
+The communication between the LTI Consumer (platform), browser, and LTI Tool generally follows these steps (at the moment, enumerated items may NOT correspond to arrow-like transitions/steps on the diagram above):
 1. A user initiates an action to launch an LTI Tool from the LTI Consumer (platform) interface.
-2. The LTI Consumer (platform) generates the JWT containing the necessary information for the LTI Tool, such as user context and permissions. The JWT payload may include the fields you mentioned, such as "*type*," "*tid*," "*iat*" and "*exp*."
+2. The LTI Consumer (platform) generates the JWT containing the necessary information for the LTI Tool, such as user context (platform Id and/or course Id) and permissions. The JWT payload may include the fields such as "*type*," "*tid*," "*iat*" and "*exp*" or any others which may help to distinguish the learners, learning objects or learning results.
 3. The LTI Consumer (platform) constructs a launch URL for the LTI Tool, which includes the JWT as a parameter. This URL is typically embedded in an iframe or sent as a redirect URL.
 4. The LTI Consumer (platform) sends the launch request to the browser, which loads the LTI Tool's content.
 5. The browser includes the launch URL with the JWT as a parameter when requesting the LTI Tool.
@@ -87,4 +87,6 @@ The communication between the LTI Consumer (platform), browser, and LTI Tool gen
 7. The LTI Tool verifies the JWT's authenticity, ensuring that it is valid, hasn't expired, and is signed by a trusted source.
 8. Once the JWT is successfully validated, the LTI Tool can access the information contained within the JWT's payload. This information can be used to authenticate the user, establish their role or permissions, and customize the tool's behaviour based on the LTI Consumer's (platform) requirements.
 
-In summary, the JWT containing the provided object is typically sent from the LTI Consumer (platform) to the LTI Tool as part of the launch process, allowing the LTI Tool to receive user context and permissions securely.
+In summary, the communication using JWTs, containing the provided objects is typically sent from the LTI Consumer (platform) to the LTI Tool as part of the launch process, allowing the LTI Tool to receive user context and permissions securely.
+
+*To be continued...*
