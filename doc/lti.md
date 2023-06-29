@@ -54,16 +54,16 @@ Overcoming these challenges requires collaboration between instructional designe
 
 ## We use LTI version 1.3
 
-LTI 1.3 offers: 
-
+ - *LTI 1.3 offers*: 
 Improved security based on OAuth2 and JSON Web Tokens makes security updates safer and more accessible. 
 Improved documentation and directions for implementation.
 Since LTI 1.3 is built on LTI 1.1, it provides an easier upgrade path, allowing for more straightforward adoption and requiring a smaller learning curve. 
 
-LTI Advantage
-
+- *LTI Advantage*:
 LTI 1.3 improves existing services by allowing new extensions to be layered on the existing launch mechanism. Currently, there are three extensions available in LTI 1.3 and more planned. This bundle of extensions evolves outside the LTI specification and is called LTI Advantage.
 
-Deep Linking Service makes it easier to provide links to specific content. This was named a content item previously. 
-Name and Role Provisioning makes obtaining a list of course participants and roles easier and sends defined information to the learning tools. This extension was named membership service previously.
-Assignment and Grade Service makes passing grade information between the tool and the Learning Platform easier. This extension was named the outcome service previously.  
+- *Deep Linking Service*, which makes it easier to provide links to specific content. This was named a content item previously.
+
+- *Name and Role Provisioning* makes obtaining a list of course participants and roles easier and sends defined information to the learning tools. This extension was also known as *membership service* previously.
+  
+- *Assignment and Grade Service* makes passing grade information between the tool and the Learning Platform easier. This extension was named the outcome service previously.  
