@@ -92,6 +92,9 @@ The communication between the LTI Consumer (platform), browser, and LTI Tool gen
 8. Once the JWT is successfully validated, the LTI Tool can access the information contained within the JWT's payload. This information can be used to authenticate the user, establish their role or permissions, and customize the tool's behaviour based on the LTI Consumer's (platform) requirements.
 
 ### What is JWT for?
+
+*JWT - JavaScript Web Token*
+
 ![](./images/lti-05.png)
 
 In summary, the JWTs (containing the provided objects) are typically used in communication from the LTI Consumer (platform) to the LTI Tool as part of the launch process, allowing the LTI Tool to receive user context and permissions securely.
