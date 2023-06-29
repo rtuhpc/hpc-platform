@@ -81,15 +81,20 @@ LTI 1.3 improves existing services by allowing new extensions to be layered on t
 
 ![](./images/lti-03.png)
 
-The communication between the LTI Consumer (platform), browser, and LTI Tool generally follows these steps (at the moment, enumerated following items in the text may NOT correspond to arrow-like transitions/steps on the diagram above):
-1. A user initiates an action to launch an LTI Tool from the LTI Consumer (platform) interface.
-2. The LTI Consumer (platform) generates the JWT containing the necessary information for the LTI Tool, such as user context (platform Id and/or course Id) and permissions. The JWT payload may include the fields such as "*type*," "*tid*," "*iat*" and "*exp*" or any others which may help to distinguish the learners, learning objects or learning results.
-3. The LTI Consumer (platform) constructs a launch URL for the LTI Tool, which includes the JWT as a parameter. This URL is typically embedded in an iframe or sent as a redirect URL.
-4. The LTI Consumer (platform) sends the launch request to the browser, which loads the LTI Tool's content.
-5. The browser includes the launch URL with the JWT as a parameter when requesting the LTI Tool.
-6. The LTI Tool receives the launch request and extracts the JWT from the request parameters.
-7. The LTI Tool verifies the JWT's authenticity, ensuring that it is valid, hasn't expired, and is signed by a trusted source.
-8. Once the JWT is successfully validated, the LTI Tool can access the information contained within the JWT's payload. This information can be used to authenticate the user, establish their role or permissions, and customize the tool's behaviour based on the LTI Consumer's (platform) requirements.
+Here are the steps involved in the communication process in LTI 1.3:
+
+1. The user initiates an action to launch an LTI Tool from the platform's interface.
+2. The platform generates an LTI Launch Request, which is a secure JWT containing information about the user, context, and other necessary parameters. This JWT is signed using the platform's private key.
+3. The platform constructs a launch URL for the LTI Tool, which includes the LTI Launch Request as a parameter. This URL may consist of additional parameters as required.
+4. The platform redirects the browser to the launch URL, passing the LTI Launch Request as a parameter.
+5. The browser makes a request to the LTI Tool's endpoint, including the LTI Launch Request as a parameter. This request is typically an HTTP POST request.
+6. The LTI Tool receives the launch request and validates the authenticity and integrity of the LTI Launch Request. It verifies the signature using the platform's public key and ensures the request hasn't been tampered with.
+7. If the LTI Launch Request is valid, the LTI Tool extracts the necessary information from the request payload to authenticate the user and set up the tool's environment accordingly.
+8. The LTI Tool prepares a response, which includes any additional information required by the platform, such as grades or outcomes.
+9. The LTI Tool sends the response back to the platform, typically as an HTTP POST request, including the required data.
+10. The platform receives the response from the LTI Tool, processes the data as needed, and presents the appropriate information to the user within its interface.
+
+In LTI 1.3, the communication between the platform, browser, and LTI Tool relies on secure JWTs for passing information and ensuring data integrity. The launch process involves redirecting the browser to the LTI Tool's endpoint with the necessary information encapsulated within the JWT. The subsequent communication occurs through HTTP requests.
 
 ### What is JWT for?
 
