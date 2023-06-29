@@ -54,6 +54,7 @@ Overcoming these challenges requires collaboration between instructional designe
 
 ## We use LTI version 1.3
 
+### About LTI 1.3
  - **LTI 1.3 offers**: 
 Improved security based on OAuth2 and JSON Web Tokens makes security updates safer and more accessible. 
 Improved documentation and directions for implementation.
@@ -66,4 +67,19 @@ LTI 1.3 improves existing services by allowing new extensions to be layered on t
 
 - **Name and Role Provisioning** makes obtaining a list of course participants and roles easier and sends defined information to the learning tools. This extension was also known as *membership service* previously.
   
-- **Assignment and Grade Service** makes passing grade information between the tool and the Learning Platform easier. This extension was named the outcome service previously.  
+- **Assignment and Grade Service** makes passing grade information between the tool and the Learning Platform easier. This extension was named the outcome service previously.
+
+
+### How systems communicate in LTI 1.3
+
+The communication between the LTI Consumer (platform), browser, and LTI Tool generally follows these steps (in principle, corresponds to arrow-like transitions on the diagram above):
+1. A user initiates an action to launch an LTI Tool from the LTI Consumer (platform) interface.
+2. The LTI Consumer (platform) generates the JWT containing the necessary information for the LTI Tool, such as user context and permissions. The JWT payload may include the fields you mentioned, such as "*type*," "*tid*," "*iat*" and "*exp*."
+3. The LTI Consumer (platform) constructs a launch URL for the LTI Tool, which includes the JWT as a parameter. This URL is typically embedded in an iframe or sent as a redirect URL.
+4. The LTI Consumer (platform) sends the launch request to the browser, which loads the LTI Tool's content.
+5. The browser includes the launch URL with the JWT as a parameter when requesting the LTI Tool.
+6. The LTI Tool receives the launch request and extracts the JWT from the request parameters.
+7. The LTI Tool verifies the JWT's authenticity, ensuring that it is valid, hasn't expired, and is signed by a trusted source.
+8. Once the JWT is successfully validated, the LTI Tool can access the information contained within the JWT's payload. This information can be used to authenticate the user, establish their role or permissions, and customize the tool's behaviour based on the LTI Consumer's (platform) requirements.
+
+In summary, the JWT containing the provided object is typically sent from the LTI Consumer (platform) to the LTI Tool as part of the launch process, allowing the LTI Tool to receive user context and permissions securely.
