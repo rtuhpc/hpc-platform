@@ -76,7 +76,7 @@ LTI 1.3 improves existing services by allowing new extensions to be layered on t
 
 ![](./images/lti-03.png)
 
-The communication between the LTI Consumer (platform), browser, and LTI Tool generally follows these steps (in principle, corresponds to arrow-like transitions on the diagram above):
+The communication between the LTI Consumer (platform), browser, and LTI Tool generally follows these steps (in principle, enumerated items correspond to arrow-like transitions on the diagram above):
 1. A user initiates an action to launch an LTI Tool from the LTI Consumer (platform) interface.
 2. The LTI Consumer (platform) generates the JWT containing the necessary information for the LTI Tool, such as user context and permissions. The JWT payload may include the fields you mentioned, such as "*type*," "*tid*," "*iat*" and "*exp*."
 3. The LTI Consumer (platform) constructs a launch URL for the LTI Tool, which includes the JWT as a parameter. This URL is typically embedded in an iframe or sent as a redirect URL.
