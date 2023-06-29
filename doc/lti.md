@@ -1,5 +1,6 @@
 
-# Introduction to Learning Tools Interoperability (LTI) for Instructional Designers teaching High-Performance Computing (HPC)
+# Introduction to Learning Tools Interoperability (LTI) 
+*For Instructional Designers creating content and Instructors teaching High-Performance Computing (HPC)*
 
 ![](./images/lti-01.png)
 
