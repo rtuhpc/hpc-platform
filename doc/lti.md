@@ -79,9 +79,29 @@ LTI 1.3 improves existing services by allowing new extensions to be layered on t
 
 ### How systems communicate in LTI 1.3
 
-![](./images/lti-03.png)
+![](./images/lti-06.png)
 
-Here are the steps involved in the communication process in LTI 1.3:
+#### Initial view
+
+In LTI 1.3, the initial part(stage) of the communication protocol between the platform (LTI Tool Consumer) and the LTI Tool involves the platform requesting validation from the LTI Tool and the Tool performing LTI validation on the Platform side. Here are the steps involved:
+
+1. The platform (LTI Tool Consumer) initiates the communication by sending an HTTP POST request to the LTI Tool's platform registration endpoint. This request includes the necessary information to establish the connection, such as the platform's client ID and the intended scope.
+
+2. The LTI Tool receives the request and validates the authenticity and integrity of the incoming request. It verifies that the request comes from a trusted platform using established authentication mechanisms.
+
+3. If the request is valid, the LTI Tool performs LTI validation on the platform side. It verifies that the platform is an approved and valid LTI Tool Consumer by checking the platform's client ID and other relevant credentials.
+
+4. Once the LTI validation is successfully performed, the LTI Tool sends a response back to the platform, indicating that the platform is authorized to communicate with the tool.
+
+5. The platform receives the response from the LTI Tool and acknowledges the successful validation.
+
+At this point, the platform has been validated by the LTI Tool, establishing the trust necessary for further communication. Following this initial validation, the subsequent steps of the communication protocol can proceed, including the launch process where the platform sends the LTI Launch Request to the LTI Tool, as described in the following explanation.
+
+This initial part of the communication protocol in LTI 1.3 ensures that the platform and tool authenticate and validate each other before proceeding with the exchange of information.
+
+#### Another view
+
+Here are the steps of the communication process in LTI 1.3 following the initial stage:
 
 1. The user initiates an action to launch an LTI Tool from the platform's interface.
 2. The platform generates an LTI Launch Request, which is a secure JWT containing information about the user, context, and other necessary parameters. This JWT is signed using the platform's private key.
@@ -94,7 +114,7 @@ Here are the steps involved in the communication process in LTI 1.3:
 9. The LTI Tool sends the response back to the platform, typically as an HTTP POST request, including the required data.
 10. The platform receives the response from the LTI Tool, processes the data as needed, and presents the appropriate information to the user within its interface.
 
-In LTI 1.3, the communication between the platform, browser, and LTI Tool relies on secure JWTs for passing information and ensuring data integrity. The launch process involves redirecting the browser to the LTI Tool's endpoint with the necessary information encapsulated within the JWT. The subsequent communication occurs through HTTP requests.
+In LTI 1.3, the platform, browser, and LTI Tool communication relies on secure JWTs for passing information and ensuring data integrity. The launch process involves redirecting the browser to the LTI Tool's endpoint with the necessary information encapsulated within the JWT. The subsequent communication occurs through HTTP requests.
 
 ### What is JWT for?
 
