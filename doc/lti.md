@@ -10,6 +10,8 @@ Learning Tools Interoperability (LTI) is a technology standard widely used in th
 ### 1. What is LTI?
 LTI, or Learning Tools Interoperability, is a standard protocol developed by the IMS Global Learning Consortium. It enables the integration of external learning tools, such as interactive modules, assessments, simulations, and more, into an existing learning management system. LTI establishes a secure and standardized way for individual learning content providers and platforms like Moodle, Canvas LMS, Sakai, Blackboard, etc., to communicate, ensuring seamless interoperability.
 
+![](./images/lti-04.png)
+
 ### 2. How does LTI work?
 LTI relies on a simple yet powerful mechanism called "launching." When an instructor selects an external tool within their LMS, the LMS launches it in a separate frame or tab. LTI passes essential information, such as user identity and context, from the LMS to the tool, allowing it to provide personalized and contextualized learning experiences. This seamless integration eliminates the need for multiple logins or navigating between different platforms.
 
@@ -71,6 +73,8 @@ LTI 1.3 improves existing services by allowing new extensions to be layered on t
 
 
 ### How systems communicate in LTI 1.3
+
+![](./images/lti-03.png)
 
 The communication between the LTI Consumer (platform), browser, and LTI Tool generally follows these steps (in principle, corresponds to arrow-like transitions on the diagram above):
 1. A user initiates an action to launch an LTI Tool from the LTI Consumer (platform) interface.
