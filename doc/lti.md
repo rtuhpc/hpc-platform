@@ -16,7 +16,7 @@ LTI relies on a simple yet powerful mechanism called "launching." When an instru
 
 ### 3. Benefits of LTI for Instructional Designers:
 - Enhanced Tool Selection: LTI opens up a vast ecosystem of educational tools and resources that instructional designers can integrate into their courses. This flexibility allows for more varied and engaging learning experiences.
-- Streamlined Workflow: LTI eliminates the need for manual data transfers or managing multiple platforms separately. Instructional designers can focus on designing effective content without worrying about technical integration.
+- Streamlined Workflow: LTI eliminates the need for manual data transfers or managing multiple platforms separately. Instructional designers can focus on designing effective content without worrying about technical implementation and integration into the learning ecosystem.
 - Personalization and Contextualization: LTI enables transferring user data, such as roles, grades, and progress, between the LMS and external tools. Instructional designers can leverage this data to create personalized and adaptive learning experiences for learners.
 - Scalability and Updates: LTI-compatible tools can be easily added or replaced within an LMS, providing scalability and the ability to adapt to changing instructional needs. When teaching-learning tools are updated, the changes are reflected seamlessly across courses using LTI integration.
 
@@ -48,8 +48,23 @@ When instructional designers use Learning Tools Interoperability (LTI) in teachi
 
 6. Training and Support: Instructional designers and faculty may require training and support in using HPC tools integrated through LTI effectively. Providing comprehensive documentation, tutorials, and user support resources can help address any challenges and ensure a smooth user experience.
 
-7. Keeping Pace with Technological Advances: High-Performance Computing rapidly evolves, and new tools and techniques are constantly emerging. Instructional designers using LTI for HPC teaching must stay updated with the latest advancements to ensure they provide learners with relevant and up-to-date resources.
+7. Keeping Pace with Technological Advances: High-Performance Computing rapidly evolves, and new tools and techniques are constantly emerging. Instructional designers using LTI for HPC teaching must stay updated with the latest advancements to provide learners with relevant and up-to-date resources.
 
 Overcoming these challenges requires collaboration between instructional designers, IT professionals, HPC experts, and tool providers. By actively addressing these challenges, instructional designers can leverage LTI to enhance the teaching and learning experiences in High-Performance Computing.
 
 
+## We use LTI version 1.3
+
+LTI 1.3 offers: 
+
+Improved security based on OAuth2 and JSON Web Tokens makes security updates safer and more accessible. 
+Improved documentation and directions for implementation.
+Since LTI 1.3 is built on LTI 1.1, it provides an easier upgrade path, allowing for more straightforward adoption and requiring a smaller learning curve. 
+
+LTI Advantage
+
+LTI 1.3 improves existing services by allowing new extensions to be layered on the existing launch mechanism. Currently, there are three extensions available in LTI 1.3 and more planned. This bundle of extensions evolves outside the LTI specification and is called LTI Advantage.
+
+Deep Linking Service makes it easier to provide links to specific content. This was named a content item previously. 
+Name and Role Provisioning makes obtaining a list of course participants and roles easier and sends defined information to the learning tools. This extension was named membership service previously.
+Assignment and Grade Service makes passing grade information between the tool and the Learning Platform easier. This extension was named the outcome service previously.  
