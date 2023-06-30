@@ -142,7 +142,7 @@ In this model, the layers can be conceptualized as follows:
 
 In this layering model, the HTTP and Transport Layer forms the foundation, followed by the OAuth 2.0 layer for authorization and the OIDC layer for identity and authentication. The layers build upon each other, adding specific functionality to enable secure and standardized communication, authorization, and identity management between client applications and service providers.
 
-![](./images/lti-75.png)
+![](./images/lti-07.png)
 
 The standard OSI (Open Systems Interconnection) model is a conceptual framework that defines seven layers to understand and describe the functions and interactions of networking protocols. While the OSI model primarily focuses on network communication, it can be related to the layering concept in OAuth 2.0 and OIDC in the following way:
 
