@@ -124,4 +124,38 @@ In LTI 1.3, the platform, browser, and LTI Tool communication relies on secure J
 
 In summary, the JWTs (containing the provided objects) are typically used in communication from the LTI Consumer (platform) to the LTI Tool as part of the launch process, allowing the LTI Tool to receive user context and permissions securely.
 
+
+### OIDC - what is it for?
+
+In the context of OIDC being an identity layer built on top of the OAuth 2.0 protocol, it's helpful to understand the layering concept in this model.
+
+In this model, the layers can be conceptualized as follows:
+
+1. Bottom Layer: HTTP and Transport Layer
+   - This foundational layer handles the basic communication between client-server applications using the HTTP protocol. It includes the transmission of requests and responses over the network.
+
+2. OAuth 2.0 Layer
+   - OAuth 2.0 is an authorization framework that allows applications to obtain limited access to user resources on behalf of the user. It operates above the HTTP layer and provides a standardized way for clients to request and obtain access tokens from authorization servers. The OAuth 2.0 layer handles the authorization flow and token management.
+
+3. OIDC Layer
+   - OpenID Connect (OIDC) operates as an identity layer built on top of OAuth 2.0. It introduces additional features to OAuth 2.0 to facilitate user authentication and identity information exchange. OIDC extends the capabilities of OAuth 2.0 by adding an ID token, which contains user identity information, and standardized endpoints for user authentication and authorization. The OIDC layer builds upon the OAuth 2.0 layer and provides identity-related functionality.
+
+In this layering model, the HTTP and Transport Layer forms the foundation, followed by the OAuth 2.0 layer for authorization and the OIDC layer for identity and authentication. The layers build upon each other, adding specific functionality to enable secure and standardized communication, authorization, and identity management between client applications and service providers.
+
+![](./images/lti-75.png)
+
+The standard OSI (Open Systems Interconnection) model is a conceptual framework that defines seven layers to understand and describe the functions and interactions of networking protocols. While the OSI model primarily focuses on network communication, it can be related to the layering concept in OAuth 2.0 and OIDC in the following way:
+
+1. OSI Layer 7: Application Layer
+   - This layer in the OSI model corresponds to the highest layer, which is responsible for providing services directly to the end user. In the context of OIDC and OAuth 2.0, the OIDC layer can be considered as a part of the Application Layer, as it deals with identity, authentication, and authorization.
+
+2. OSI Layers 5 and 6: Session Layer and Presentation Layer
+   - The functions of these layers in the OSI model, such as establishing and managing sessions and data presentation, are not directly analogous to the OAuth 2.0 and OIDC layers. These layers in the OSI model deal with different aspects of network communication and data formatting.
+
+3. OSI Layers 1-4: Physical, Data Link, Network, and Transport Layers
+   - These lower layers in the OSI model handle the physical transmission, addressing, routing, and reliable data transport. While these layers are crucial for network communication, they are not directly tied to the functionality provided by OAuth 2.0 and OIDC.
+
+It's important to note that the OSI model and the layering concept in OAuth 2.0 and OIDC serve different purposes. The OSI model provides a general framework to understand network protocols and their functions. At the same time, the layering in OAuth 2.0 and OIDC specifically focuses on authorization, identity, and authentication in the context of client-server applications.
+
+
 *To be continued...*
