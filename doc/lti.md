@@ -157,5 +157,28 @@ The standard OSI (Open Systems Interconnection) model is a conceptual framework 
 
 It's important to note that the OSI model and the layering concept in OAuth 2.0 and OIDC serve different purposes. The OSI model provides a general framework to understand network protocols and their functions. At the same time, the layering in OAuth 2.0 and OIDC specifically focuses on authorization, identity, and authentication in the context of client-server applications.
 
+#### About Private and Public Encryption keys
+
+In the communication process between the *Platform* and the *LTI Tool* in LTI 1.3, private and public encryption keys are used for secure communication and authentication. Here's how they are involved:
+
+1. Platform Intention to Communicate:
+   - When the platform (LTI Tool Consumer) intends to communicate with an LTI Tool, it generates a key pair consisting of a private key and a corresponding public key.
+
+2. Platform Registration:
+   - The platform registers itself with the LTI Tool, providing its public key as part of the registration process. This allows the LTI Tool to establish trust with the platform and verify its identity.
+
+3. Launch Request:
+   - The platform initiates the launch process and includes its public key in the LTI Launch Request as metadata. This public key is used by the LTI Tool to verify the authenticity and integrity of subsequent messages from the platform.
+
+4. JWT Signing:
+   - As part of the launch process, the platform signs the LTI Launch Request using its private key. This signature ensures the integrity and authenticity of the request. The LTI Tool can verify this signature using the platform's public key.
+
+5. Request Verification on the LTI Tool Side:
+   - The LTI Tool receives the LTI Launch Request and extracts the platform's public key from the metadata. It uses this public key to verify the signature of the request, ensuring that it has been signed by the platform's private key.
+
+6. Establishing Trust:
+   - Once the LTI Tool successfully verifies the request's signature using the platform's public key, it establishes trust with the platform. This trust enables further secure communication and exchange of information between the platform and the LTI Tool.
+
+In summary, private and public encryption keys are used in the communication process to establish trust, verify the authenticity of messages, and ensure secure communication between the platform and the LTI Tool. The platform's private key is used to sign the messages, while the LTI Tool uses the platform's public key to verify the signatures and establish trust with the platform.
 
 *To be continued...*
