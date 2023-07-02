@@ -165,6 +165,8 @@ In the communication process between the *Platform* and the *LTI Tool* in LTI 1.
 
 Here's how they are involved:
 
+![](./images/lti-09.png)
+
 1. Platform Intention to Communicate:
    - When the platform (LTI Tool Consumer) intends to communicate with an LTI Tool, it generates a key pair consisting of a private key and a corresponding public key.
 
