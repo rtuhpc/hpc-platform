@@ -199,7 +199,7 @@ The standard OSI (Open Systems Interconnection) model is a conceptual framework 
 
 It's important to note that the OSI model and the layering concept in OAuth 2.0 and OIDC serve different purposes. The OSI model provides a general framework to understand network protocols and their functions. At the same time, the layering in OAuth 2.0 and OIDC specifically focuses on authorization, identity, and authentication in the context of client-server applications.
 
-#### About Private and Public Encryption keys
+### About Private and Public Encryption keys
 
 In the communication process between the *Platform* and the *LTI Tool* in LTI 1.3, private and public encryption keys are used for secure communication and authentication. 
 
