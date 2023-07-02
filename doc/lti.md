@@ -81,21 +81,21 @@ LTI 1.3 improves existing services by allowing new extensions to be layered on t
 
 #### Initial view
 
-In LTI 1.3, the initial part(stage) of the communication protocol between the platform (LTI Tool Consumer) and the LTI Tool involves the platform requesting validation from the LTI Tool and the Tool performing LTI validation on the Platform side. Here are the steps involved:
+In LTI 1.3, the initial part(stage) of the communication protocol between the PLATFORM (LTI Tool Consumer) and the LTI TOOL involves the platform requesting validation from the LTI Tool and the Tool performing LTI validation on the Platform side. Here are the steps involved:
 
 ![](./images/lti-06-1.png)
 
-1. The platform (LTI Tool Consumer) initiates the communication by sending an HTTP POST request to the LTI Tool's platform registration endpoint. This request includes the necessary information to establish the connection, such as the platform's client ID and the intended scope.
+1. The PLATFORM (LTI TOOL Consumer) initiates the communication by sending an HTTP POST request to the LTI TOOL's platform registration endpoint. This request includes the necessary information to establish the connection, such as the platform's client ID and the intended scope.
 
-2. The LTI Tool receives the request and validates the authenticity and integrity of the incoming request. It verifies that the request comes from a trusted platform using established authentication mechanisms.
+2. The LTI TOOL receives the request and validates the authenticity and integrity of the incoming request. It verifies that the request comes from a trusted platform using established authentication mechanisms.
 
-3. If the request is valid, the LTI Tool performs LTI validation on the platform side. It verifies that the platform is an approved and valid LTI Tool Consumer by checking the platform's client ID and other relevant credentials.
+3. If the request is valid, the LTI TOOL performs LTI validation on the PLATFORM side. It verifies that the PLATFORM is an approved and reasonable (valid) LTI Tool Consumer by checking the platform's client ID and other relevant credentials.
 
-4. Once the LTI validation is successfully performed, the LTI Tool sends a response back to the platform, indicating that the platform is authorized to communicate with the tool.
+4. Once the LTI validation is successfully performed, the LTI TOOL sends a response back to the PLATFORM, indicating that the platform is authorized to communicate with the tool.
 
-5. The platform receives the response from the LTI Tool and acknowledges the successful validation.
+5. The platform receives the response from the LTI TOOL and acknowledges the successful validation.
 
-At this point, the platform has been validated by the LTI Tool, establishing the trust necessary for further communication. Following this initial validation, the subsequent steps of the communication protocol can proceed, including the launch process where the platform sends the LTI Launch Request to the LTI Tool, as described in the following explanation.
+At this point, the PLATFORM has been validated by the LTI TOOL, establishing the trust necessary for further communication. Following this initial validation, the subsequent steps of the communication protocol can proceed, including the launch process where the PLATFORM sends the LTI Launch Request to the LTI TOOL, as described in the following explanation.
 
 This initial part of the communication protocol in LTI 1.3 ensures that the platform and tool authenticate and validate each other before proceeding with the exchange of information.
 
@@ -103,18 +103,26 @@ This initial part of the communication protocol in LTI 1.3 ensures that the plat
 
 Here are the steps of the communication process in LTI 1.3 following the initial stage:
 
-1. The user initiates an action to launch an LTI Tool from the platform's interface.
-2. The platform generates an LTI Launch Request, which is a secure JWT containing information about the user, context, and other necessary parameters. This JWT is signed using the platform's private key.
-3. The platform constructs a launch URL for the LTI Tool, which includes the LTI Launch Request as a parameter. This URL may consist of additional parameters as required.
-4. The platform redirects the browser to the launch URL, passing the LTI Launch Request as a parameter.
-5. The browser makes a request to the LTI Tool's endpoint, including the LTI Launch Request as a parameter. This request is typically an HTTP POST request.
-6. The LTI Tool receives the launch request and validates the authenticity and integrity of the LTI Launch Request. It verifies the signature using the platform's public key and ensures the request hasn't been tampered with.
-7. If the LTI Launch Request is valid, the LTI Tool extracts the necessary information from the request payload to authenticate the user and set up the tool's environment accordingly.
-8. The LTI Tool prepares a response, which includes any additional information required by the platform, such as grades or outcomes.
-9. The LTI Tool sends the response back to the platform, typically as an HTTP POST request, including the required data.
-10. The platform receives the response from the LTI Tool, processes the data as needed, and presents the appropriate information to the user within its interface.
+![](./images/lti-06-2.png)
 
-In LTI 1.3, the platform, browser, and LTI Tool communication relies on secure JWTs for passing information and ensuring data integrity. The launch process involves redirecting the browser to the LTI Tool's endpoint with the necessary information encapsulated within the JWT. The subsequent communication occurs through HTTP requests.
+1. The user initiates an action to launch an LTI TOOL from the platform's interface.
+2. The PLATFORM generates an LTI Launch Request:
+   - a secure JWT containing information about the user,
+   - context, and
+   - other necessary parameters.
+<br>This JWT is signed using the platform's private key.
+4. The platform constructs a launch URL for the LTI TOOL, which includes the LTI Launch Request as a parameter. This URL may consist of additional parameters as required.
+5. The platform redirects the browser to the launch URL, passing the LTI Launch Request as a parameter.
+6. The BROWSER "*makes a request*" to the LTI TOOLS's endpoint, including the LTI Launch Request as a parameter. This request is typically an HTTP POST request.
+7. The LTI TOOL receives the launch request and validates the authenticity and integrity of the LTI Launch Request. It verifies the signature using the PLATFORM's public key and ensures the request hasn't been tampered with.
+8. If the LTI Launch Request is valid, the LTI TOOL extracts the necessary information from the request payload to authenticate the user and set up the tool's environment accordingly.
+9. The LTI TOOL prepares a response, which includes any additional information required by the platform, such as grades or outcomes.
+10. The LTI TOOL sends the response back to the platform, typically as an HTTP POST request, including the required data.
+11. The PLATFORM receives the response from the LTI TOOL, processes the data as needed, and presents the appropriate information to the user within its interface.
+
+In the last step, we skip the symmetrical validation from the PLATFOM's perspective and learn/teach business logic on the PLATFORM side.
+
+In LTI 1.3, the PLATFORM, BROWSER, and LTI TOOL communication rely on secure JWTs for passing information and ensuring data integrity. The launch process involves redirecting the browser to the LTI Tool's endpoint with the necessary information encapsulated within the JWT. The subsequent communication occurs through HTTP requests.
 
 ### What is JWT for?
 
@@ -122,7 +130,7 @@ In LTI 1.3, the platform, browser, and LTI Tool communication relies on secure J
 
 ![](./images/lti-05.png)
 
-In summary, the JWTs (containing the provided objects) are typically used in communication from the LTI Consumer (platform) to the LTI Tool as part of the launch process, allowing the LTI Tool to receive user context and permissions securely.
+In summary, the JWTs (containing the provided objects) are typically used in communication from the PLATFORM (LTI Consumer) to the LTI TOOL as part of the launch process, allowing the LTI TOOL to receive user context and permissions securely.
 
 
 ### OIDC - what is it for?
