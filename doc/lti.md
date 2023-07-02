@@ -107,22 +107,23 @@ Here are the steps of the communication process in LTI 1.3 following the initial
 
 1. The user initiates an action to launch an LTI TOOL from the platform's interface.
 2. The PLATFORM generates an LTI Launch Request:
-   - a secure JWT containing information about the user,
+   - a secure token (JWT) containing information about the user,
    - context, and
    - other necessary parameters.
-<br>This JWT is signed using the platform's private key.
-4. The platform constructs a launch URL for the LTI TOOL, which includes the LTI Launch Request as a parameter. This URL may consist of additional parameters as required.
-5. The platform redirects the browser to the launch URL, passing the LTI Launch Request as a parameter.
-6. The BROWSER "*makes a request*" to the LTI TOOLS's endpoint, including the LTI Launch Request as a parameter. This request is typically an HTTP POST request.
-7. The LTI TOOL receives the launch request and validates the authenticity and integrity of the LTI Launch Request. It verifies the signature using the PLATFORM's public key and ensures the request hasn't been tampered with.
-8. If the LTI Launch Request is valid, the LTI TOOL extracts the necessary information from the request payload to authenticate the user and set up the tool's environment accordingly.
-9. The LTI TOOL prepares a response, which includes any additional information required by the platform, such as grades or outcomes.
-10. The LTI TOOL sends the response back to the platform, typically as an HTTP POST request, including the required data.
-11. The PLATFORM receives the response from the LTI TOOL, processes the data as needed, and presents the appropriate information to the user within its interface.
+3. The platform constructs a launch URL for the LTI TOOL, which includes the LTI Launch Request as a parameter. This URL may consist of additional parameters as required.
+4. The platform redirects the browser to the launch URL, passing the LTI Launch Request as a parameter.
+5. The BROWSER "*makes a request*" to the LTI TOOLS's endpoint, including the LTI Launch Request as a parameter. This request is typically an HTTP POST request.
+6. The LTI TOOL receives the launch request and validates the authenticity and integrity of the LTI Launch Request. It verifies the signature using the PLATFORM's public key and ensures the request hasn't been tampered with.
+7. If the LTI Launch Request is valid, the LTI TOOL extracts the necessary information from the request payload to authenticate the user and set up the tool's environment accordingly.
+8. The LTI TOOL prepares a response, which includes any additional information required by the platform, such as grades or outcomes.
+9. The LTI TOOL sends the response back to the platform, typically as an HTTP POST request, including the required data.
+10. The PLATFORM receives the response from the LTI TOOL, processes the data as needed, and presents the appropriate information to the user within its interface.
 
-In the last step, we skip the symmetrical validation from the PLATFOM's perspective and learn/teach business logic on the PLATFORM side.
+In the last step, we skip the symmetrical validation from the PLATFOM's perspective and instructional business logic on the PLATFORM and TOOL sides.
 
-In LTI 1.3, the PLATFORM, BROWSER, and LTI TOOL communication rely on secure JWTs for passing information and ensuring data integrity. The launch process involves redirecting the browser to the LTI Tool's endpoint with the necessary information encapsulated within the JWT. The subsequent communication occurs through HTTP requests.
+In LTI 1.3, the PLATFORM, BROWSER, and LTI TOOL communication rely on secure JWTs for passing information and ensuring data integrity. This token (JWT) is signed using PLATFORM's Private Key (PrKey). 
+
+The launch process involves redirecting the browser to the LTI Tool's endpoint with the necessary information encapsulated within the JWT.  The subsequent communication occurs through HTTP requests.
 
 ### What is JWT for?
 
@@ -182,13 +183,13 @@ Here's how they are involved:
    - The platform registers itself with the LTI Tool, providing its public key as part of the registration process. This allows the LTI Tool to establish trust with the platform and verify its identity.
 
 3. Launch Request:
-   - The platform initiates the launch process and includes its public key in the LTI Launch Request as metadata. This public key is used by the LTI Tool to verify the authenticity and integrity of subsequent messages from the platform.
+   - The platform initiates the launch process and includes its public key as metadata in the LTI Launch Request. This public key is used by the LTI Tool to verify the authenticity and integrity of subsequent messages from the platform.
 
 4. JWT Signing:
    - As part of the launch process, the platform signs the LTI Launch Request using its private key. This signature ensures the integrity and authenticity of the request. The LTI Tool can verify this signature using the platform's public key.
 
 5. Request Verification on the LTI Tool Side:
-   - The LTI Tool receives the LTI Launch Request and extracts the platform's public key from the metadata. It uses this public key to verify the signature of the request, ensuring that it has been signed by the platform's private key.
+   - The LTI Tool receives the LTI Launch Request and extracts the platform's public key from the metadata. It uses this public key to verify the signature of the request, ensuring that the platform's private key has signed it.
 
 6. Establishing Trust:
    - Once the LTI Tool successfully verifies the request's signature using the platform's public key, it establishes trust with the platform. This trust enables further secure communication and exchange of information between the platform and the LTI Tool.
