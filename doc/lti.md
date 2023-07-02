@@ -79,11 +79,11 @@ LTI 1.3 improves existing services by allowing new extensions to be layered on t
 
 ### How systems communicate in LTI 1.3
 
-![](./images/lti-06.png)
-
 #### Initial view
 
 In LTI 1.3, the initial part(stage) of the communication protocol between the platform (LTI Tool Consumer) and the LTI Tool involves the platform requesting validation from the LTI Tool and the Tool performing LTI validation on the Platform side. Here are the steps involved:
+
+![](./images/lti-06.png)
 
 1. The platform (LTI Tool Consumer) initiates the communication by sending an HTTP POST request to the LTI Tool's platform registration endpoint. This request includes the necessary information to establish the connection, such as the platform's client ID and the intended scope.
 
