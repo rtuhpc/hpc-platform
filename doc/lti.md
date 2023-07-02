@@ -127,7 +127,8 @@ The launch process involves redirecting the browser to the LTI Tool's endpoint w
 
 ### What is JWT for?
 
-*JWT - JavaScript Web Token*
+*JWT - JSON Web Token* <br>
+*JSON - JavaScript Object Notation*
 
 ![](./images/lti-05.png)
 
