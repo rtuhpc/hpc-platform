@@ -132,7 +132,7 @@ The launch process involves redirecting the browser to the LTI Tool's endpoint w
 
 ![](./images/lti-05.png)
 
-In summary, the JWTs (containing the provided objects) are typically used in communication from the PLATFORM (LTI Consumer) to the LTI TOOL as part of the launch process, allowing the LTI TOOL to receive user context and permissions securely.
+In summary, the JWTs (containing the provided objects) are typically used in communication from the PLATFORM (LTI Consumer) to the LTI TOOL as part of the launch process, allowing the LTI TOOL to receive user data, context and permissions securely.
 
 ### On secure or insecure JWTs
 
