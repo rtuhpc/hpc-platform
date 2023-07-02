@@ -134,7 +134,7 @@ The launch process involves redirecting the browser to the LTI Tool's endpoint w
 
 In summary, the JWTs (containing the provided objects) are typically used in communication from the PLATFORM (LTI Consumer) to the LTI TOOL as part of the launch process, allowing the LTI TOOL to receive user data, context and permissions securely.
 
-### On secure or insecure JWTs
+### On secure and insecure JWTs
 
 The terms "secure JWT" and "insecure JWT" are not standard terminology, but they can be used to describe JWTs based on their characteristics and how they are used in a specific context. Let's explore the difference between these two types of JWTs:
 
