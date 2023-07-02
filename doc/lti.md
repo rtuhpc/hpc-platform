@@ -144,7 +144,7 @@ The terms "secure JWT" and "insecure JWT" are not standard terminology, but they
    - Characteristics of a secure JWT:
      - It is adequately signed using a *strong* cryptographic algorithm (e.g., RS256) to ensure data integrity.
      - The signing key used to generate the JWT is adequately protected and kept confidential.
-     - The token _payload contains only necessary information and does not expose sensitive data_.
+     - The token **payload contains only necessary information and does not expose sensitive data**.
      - The token includes an appropriate expiration (exp) claim, limiting the token's validity period.
      - The token is used within a secure and trusted communication channel.
      - It is validated carefully on the receiving end to prevent token tampering and misuse.
