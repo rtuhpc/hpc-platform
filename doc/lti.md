@@ -159,7 +159,11 @@ It's important to note that the OSI model and the layering concept in OAuth 2.0 
 
 #### About Private and Public Encryption keys
 
-In the communication process between the *Platform* and the *LTI Tool* in LTI 1.3, private and public encryption keys are used for secure communication and authentication. Here's how they are involved:
+In the communication process between the *Platform* and the *LTI Tool* in LTI 1.3, private and public encryption keys are used for secure communication and authentication. 
+
+![](./images/lti-08.png)
+
+Here's how they are involved:
 
 1. Platform Intention to Communicate:
    - When the platform (LTI Tool Consumer) intends to communicate with an LTI Tool, it generates a key pair consisting of a private key and a corresponding public key.
