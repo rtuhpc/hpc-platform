@@ -121,7 +121,7 @@ Here are the steps of the communication process in LTI 1.3 following the initial
 
 In the last step, we skip the symmetrical validation from the PLATFOM's perspective and instructional business logic on the PLATFORM and TOOL sides.
 
-In LTI 1.3, the PLATFORM, BROWSER, and LTI TOOL communication rely on secure JWTs for passing information and ensuring data integrity. This token (JWT) is signed using PLATFORM's Private Key (PrKey). 
+In LTI 1.3, the PLATFORM, BROWSER, and LTI TOOL communication rely on *secure JWTs* for passing information and ensuring data integrity. This token (JWT) is signed using PLATFORM's Private Key (PrKey). 
 
 The launch process involves redirecting the browser to the LTI Tool's endpoint with the necessary information encapsulated within the JWT.  The subsequent communication occurs through HTTP requests.
 
@@ -134,6 +134,33 @@ The launch process involves redirecting the browser to the LTI Tool's endpoint w
 
 In summary, the JWTs (containing the provided objects) are typically used in communication from the PLATFORM (LTI Consumer) to the LTI TOOL as part of the launch process, allowing the LTI TOOL to receive user context and permissions securely.
 
+### On secure or insecure JWTs
+
+The terms "secure JWT" and "insecure JWT" are not standard terminology, but they can be used to describe JWTs based on their characteristics and how they are used in a specific context. Let's explore the difference between these two types of JWTs:
+
+1. Secure JWT:
+   - A secure JWT refers to a JSON Web Token that has been appropriately handled and implemented following security best practices. This includes proper validation, verification, and protection against common JWT vulnerabilities.
+
+   - Characteristics of a secure JWT:
+     - It is adequately signed using a *strong* cryptographic algorithm (e.g., RS256) to ensure data integrity.
+     - The signing key used to generate the JWT is adequately protected and kept confidential.
+     - The token payload contains only necessary information and does not expose sensitive data.
+     - The token includes an appropriate expiration (exp) claim, limiting the token's validity period.
+     - The token is used within a secure and trusted communication channel.
+     - It is validated carefully on the receiving end to prevent token tampering and misuse.
+
+2. Insecure JWT:
+   - An insecure JWT, on the other hand, refers to a JSON Web Token that lacks proper security measures or is used inappropriately, leaving it vulnerable to attacks or misuse.
+
+   - Characteristics of an insecure JWT:
+     - It may use a weak cryptographic algorithm for signing, such as an unsuitable HMAC algorithm.
+     - The token payload may contain sensitive information or user data in a readable format without proper encryption or obfuscation.
+     - The token might have an extended validity period or lacks an expiration claim, leading to an increased risk of unauthorized access if intercepted.
+     - The token is used in unsecured communication channels, making it susceptible to interception and tampering.
+     - It is not carefully validated on the receiving end, allowing for token spoofing or replay attacks.
+
+In summary, the main difference between a "secure JWT" and an "insecure JWT" lies in the level of security measures implemented in their creation, handling, and validation. A secure JWT follows best practices to ensure data integrity, confidentiality, and protection against common vulnerabilities. At the same time, an insecure JWT lacks these essential security features, potentially putting sensitive data and applications at risk.
+
 
 ### OIDC - what is it for?
 
@@ -142,7 +169,7 @@ In the context of OIDC being an identity layer built on top of the OAuth 2.0 pro
 In this model, the layers can be conceptualized as follows:
 
 1. Bottom Layer: HTTP and Transport Layer
-   - This foundational layer handles the basic communication between client-server applications using the HTTP protocol. It includes the transmission of requests and responses over the network.
+   - This foundational layer handles the essential communication between client-server applications using the HTTP protocol. It includes the transmission of requests and responses over the network.
 
 2. OAuth 2.0 Layer
    - OAuth 2.0 is an authorization framework that allows applications to obtain limited access to user resources on behalf of the user. It operates above the HTTP layer and provides a standardized way for clients to request and obtain access tokens from authorization servers. The OAuth 2.0 layer handles the authorization flow and token management.
