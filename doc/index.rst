@@ -10,7 +10,7 @@ HPC Platform User Guide
 This page provides instructions for using different tools and interfaces available through the High-performance Computing (HPC) platform.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    01_waldur.md
    galaxy.md
