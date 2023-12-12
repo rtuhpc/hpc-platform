@@ -24,4 +24,5 @@ The central element of the HPC platform is a user-friendly interface for reservi
   :width: 400
   :align: center
   :alt: Alternative text
+  :target: https://nohap.hpc-net.lv/
   
