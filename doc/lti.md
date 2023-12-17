@@ -229,4 +229,10 @@ Here's how they are involved:
 
 In summary, private and public encryption keys are used in the communication process to establish trust, verify the authenticity of messages, and ensure secure communication between the platform and the LTI Tool. The platform's private key is used to sign the messages, while the LTI Tool uses the platform's public key to verify the signatures and establish trust with the platform.
 
+## How to use LTI on MOODLE
+
+The following video is in Latvian.
+
+<iframe src="https://player.vimeo.com/video/893010518?h=9ebfbdea00" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 *To be continued...*
