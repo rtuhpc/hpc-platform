@@ -2,4 +2,13 @@
 
 Portal available: [https://nohap.hpc-net.lv/](https://nohap.hpc-net.lv)
 
-By selecting MyAccessID method, you should be able to authenticate with your university login details or eEIDAS
+By selecting MyAccessID method, you should be able to authenticate with your university login details or eEIDAS.
+
+:::{iframe} "https://player.vimeo.com/video/894361272?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+:width: 100%
+Get up and running with MyST in Jupyter!
+:::
+
+
+
+
