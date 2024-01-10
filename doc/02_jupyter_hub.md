@@ -10,7 +10,7 @@ Access to the Jupyther Hub can be requested through the RTU HPC center: [https:/
 
 You must have an instructor account to register and invite group of students.
 
-Follow the address: [https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console(https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console).
+Follow the address: [https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console](https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console).
 
 Ievadīt lietotājvārdu un paroli.
 ![](./images/jupyter_1.png)
