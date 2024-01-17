@@ -14,23 +14,23 @@ You must have an instructor account to register and invite group of students.
 
 Follow the address: [https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console](https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console).
 
-Ievadīt lietotājvārdu un paroli.
+Enter your username and password.
 ![](./images/jupyter_1.png)
 
-Kreisajā pusē jānoklikšķina uz pogas “Users” un tad, labajā pusē, uz “Add user”.
+On the left side click on the button "Users" and then on the right side on "Add user".
 ![](./images/jupyter_2.png)
 
-Jāievada laukā “Username” studenta lietotājvārds un laukā “Select existing group”, jāievada klases nosaukums.
+Enther the student's username in the field "Username" and in the box "Select existing group" enter the name of the desired classroom to which you wish to add the student.
 ![](./images/jupyter_3.png)
 ![](./images/jupyter_3_1.png)
 
-Beigās jānospiež poga “Save” un jāaiziet uz lapas augšu
+Lastly, click on "Save" and scroll to the top of the page.
 ![](./images/jupyter_4.png)
 
-Lapas augšā jānospiež poga “Credentials”. 
+Click on “Credentials”. 
 ![](./images/jupyter_5.png)
 
-Jāievada tikko piereģistrētā studenta parole laukos “Password” un “Password Confirmation” un jānospiež set password
+Enther the password that the student will use to log in in the fields “Password” and “Password Confirmation” and click on "Set password"
 ![](./images/jupyter_6.png)
 
-Jauna studenta piereģistrēšana JupyterHub videi ir pabeigta!
+That is it! A new student has been registered to your classroom.
