@@ -6,12 +6,6 @@ and Instructors teaching High-Performance Computing (HPC)*
 
 ![](./images/lti-01.png)
 
-
-## Here is how it works (in Latvian)
-
-[<iframe src="https://player.vimeo.com/video/894361272" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> ](https://vimeo.com/893010518?share=copy)
-
-
 ## About LTI:
 Learning Tools Interoperability (LTI) is a technology standard widely used in the education sector to enhance the interoperability and integration of various learning tools and systems. LTI enables seamless connectivity between learning management systems (LMS) and external learning tools/resources, allowing instructors and learners to access multiple educational resources and services within their LMS environment. This brief guide will provide an overview of LTI and its benefits for instructional designers.
 
