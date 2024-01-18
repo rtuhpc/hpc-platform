@@ -6,10 +6,6 @@ By selecting MyAccessID method, you should be able to authenticate with your uni
 
 ## Requesting a Virtual destkop (demonstration)
 
-The following video is in Latvian.
-<iframe src="https://player.vimeo.com/video/894361272" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-
-### Related videos (in Latvian)
+The following videos are in Latvian.
 
 <iframe src="https://slides.com/viktorszagorskis-1/rtu-hpc/embed?share=hidden" width="576" height="420" title="RTU HPC" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
