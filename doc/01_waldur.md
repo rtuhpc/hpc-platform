@@ -8,3 +8,8 @@ By selecting MyAccessID method, you should be able to authenticate with your uni
 
 The following video is in Latvian.
 <iframe src="https://player.vimeo.com/video/894361272" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+
+### Related videos (in Latvian)
+
+[<iframe src="https://player.vimeo.com/video/894361272" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> ](https://vimeo.com/893010518?share=copy)
