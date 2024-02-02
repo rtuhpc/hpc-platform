@@ -1,13 +1,13 @@
 
-# Introduction to Learning Tools Interoperability (LTI) 
+# E-learning environment integration with HPC platform
 
 *For Instructional Designers creating content <br>
 and Instructors teaching High-Performance Computing (HPC)*
 
-![](./images/lti-01.png)
-
-## About LTI:
+## Introduction to Learning Tools Interoperability (LTI)
 Learning Tools Interoperability (LTI) is a technology standard widely used in the education sector to enhance the interoperability and integration of various learning tools and systems. LTI enables seamless connectivity between learning management systems (LMS) and external learning tools/resources, allowing instructors and learners to access multiple educational resources and services within their LMS environment. This brief guide will provide an overview of LTI and its benefits for instructional designers.
+
+![](./images/lti-01.png)
 
 ### 1. What is LTI?
 LTI, or Learning Tools Interoperability, is a standard protocol developed by the IMS Global Learning Consortium. It enables the integration of external learning tools, such as interactive modules, assessments, simulations, and more, into an existing learning management system. LTI establishes a secure and standardized way for individual learning content providers and platforms like Moodle, Canvas LMS, Sakai, Blackboard, etc., to communicate, ensuring seamless interoperability.
@@ -228,7 +228,7 @@ Here's how they are involved:
 
 In summary, private and public encryption keys are used in the communication process to establish trust, verify the authenticity of messages, and ensure secure communication between the platform and the LTI Tool. The platform's private key is used to sign the messages, while the LTI Tool uses the platform's public key to verify the signatures and establish trust with the platform.
 
-## How to use LTI on MOODLE
+## How to use LTI on MOODLE to access HPC cluster
 
 The following video is in Latvian.
 
