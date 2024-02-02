@@ -1,4 +1,4 @@
-# Virtual desktops
+# Virtual desktops (virtual classroom)
 
 Virtual desktops are available through Waldur resourse reservation portal: [https://nohap.hpc-net.lv/](https://nohap.hpc-net.lv)
 
