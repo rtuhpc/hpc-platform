@@ -1,6 +1,6 @@
-# Waldur resourse reservation portal
+# Virtual desktops
 
-Portal available: [https://nohap.hpc-net.lv/](https://nohap.hpc-net.lv)
+Virtual desktops are available through Waldur resourse reservation portal: [https://nohap.hpc-net.lv/](https://nohap.hpc-net.lv)
 
 By selecting MyAccessID method, you should be able to authenticate with your university login details or eEIDAS.  
 In MyAccessID window under "Login with" search for your university's identity provider.  In case of the Riga Technical University, select identity provider "Riga Technical University (Office 365)".
