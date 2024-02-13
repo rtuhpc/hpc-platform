@@ -1,8 +1,15 @@
 # HPC cluster (supercomputer)
 
+A High-Performance Computing (HPC) cluster consists of several compute nodes interconnected by a fast computer network (e.g., InfiniBand). Compute nodes are individual servers within the cluster that perform computational tasks. HPC clusters can be used for parallel computing, executing a complicated task simultaneously on several compute nodes, and distributed computing, performing smaller independent tasks on separate nodes or processor cores. HPC cluster allows solving complex problems faster and has the ability to tackle larger datasets.
+
+Users access the HPC cluster remotely via the Linux command-line interface using secure shell (SSH) protocol. Multiple users can work concurrently, each with their own computing tasks and workflows, and within their working directory to store data.
+
 [Follow the link to the user guide on using the HPC cluster RUDENS.](https://hpc-guide.rtu.lv)
 
-To receive access on the HPC cluster RUDENS, you must fill in the [application form](https://docs.google.com/forms/d/e/1FAIpQLSemd1JlJB2lyW0Fal6OA3MM7cmxpqh0GQt145lrzmqqIFQIeA/viewform).  After receiving the application, the HPC Centre will review it and contact you to inform you on the following steps.
+## Access
+
+The HPC cluster RUDENS is not yet available through the Waldur resource reservation portal.
+To receive access on RUDENS, you must fill in the [application form](https://docs.google.com/forms/d/e/1FAIpQLSemd1JlJB2lyW0Fal6OA3MM7cmxpqh0GQt145lrzmqqIFQIeA/viewform).  After receiving the application, the HPC Centre will review it and contact you to inform you on the following steps.
 
 ## Additional guides
 
