@@ -1,11 +1,15 @@
 # Jupyter Hub
-
-RTU HPC Jupyter Hub: [https://jhub.hpc.rtu.lv/](https://jhub.hpc.rtu.lv/)
-
-Access to the Jupyther Hub can be requested through the RTU HPC center: [Registration form](https://docs.google.com/forms/d/e/1FAIpQLSdsEhMkfAGtDyS6z6yYo0mDf1PQRxC06fxPI2D7YVzvDrwa-g/viewform?c=0&w=1).
-
 JupyterHub is an open-source graphical programming environment accessible through a web interface. Currently, programming in Python and R languages is supported on the RTU Jupyter environment. The prepared tasks can be run on a single 32 vCPU and 64GB RAM virtual machine, but in the future, it is planned to create the possibility of running tasks on GPUs and the whole cluster. [More information https://hpc.rtu.lv/jupyterhub/](https://hpc.rtu.lv/jupyterhub/).
 
+## Access
+**RTU HPC Jupyter Hub portal:** [**https://jhub.hpc.rtu.lv/**](https://jhub.hpc.rtu.lv/)
+
+Access to the Jupyther Hub should be requested through the RTU HPC center [registration form](https://docs.google.com/forms/d/e/1FAIpQLSdsEhMkfAGtDyS6z6yYo0mDf1PQRxC06fxPI2D7YVzvDrwa-g/viewform?c=0&w=1).
+
+Only the university employees (researchers, instructors, administration) may request access. 
+Students are invited by their course instructors (see the procedure [hier](https://hpc-platforma.rtu.lv/02_jupyter_hub.html#register-group-of-students)). 
+
+### Login to Jupyter Hub... TBC
 ![](./images/jupyter_interface.png)
 
 ## Register group of students
