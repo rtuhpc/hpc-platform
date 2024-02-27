@@ -11,6 +11,26 @@ Users access the HPC cluster remotely via the Linux command-line interface using
 The HPC cluster RUDENS is not yet available through the Waldur resource reservation portal.
 To receive access on RUDENS, you must fill in the [application form](https://docs.google.com/forms/d/e/1FAIpQLSemd1JlJB2lyW0Fal6OA3MM7cmxpqh0GQt145lrzmqqIFQIeA/viewform).  After receiving the application, the HPC Centre will review it and contact you to inform you on the following steps.
 
+# HPC demo-cases
+
+Reusable examples (with codes) of HPC applications in various scientific domains: [https://gitlab.com/eurocc-latvia](https://gitlab.com/eurocc-latvia).
+
+- Assessment of Wind Loads Using HPC
+- Building Management System AI Model
+- Crystal Growth
+- Dielectric Constant Measurement Uncertainty Estimation using HPC
+- Estimation of RF to DC Converter Power Conversion Efficiency Sensitivity to Component Parameters
+- HPC Array Job Example
+- Metagenomic analysis
+- Metal Casting HPC Model
+- MHD Mixing HPC Model
+- Microchannel Flow in a Heated Plate
+- Oceanographic HPDA
+- Room Thermal Comfort and Epidemiological Safety
+- Seasonal Weather Forecast HPDA
+
+Demonstrations are prepared by EuroCC National HPC Competence Centre of Latvia.
+
 ## Additional guides
 
 [MATLAB Parallel computing server](https://hpc.rtu.lv/matlabmdcs-hpc/?lang=en)
