@@ -1,5 +1,4 @@
-
-# Integrating e-learning environment with the HPC platform
+# Integration with e-learning environment
 
 *For Instructional Designers creating content <br>
 and Instructors teaching High-Performance Computing (HPC)*
