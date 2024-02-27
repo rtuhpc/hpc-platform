@@ -11,7 +11,7 @@ Users access the HPC cluster remotely via the Linux command-line interface using
 The HPC cluster RUDENS is not yet available through the Waldur resource reservation portal.
 To receive access on RUDENS, you must fill in the [application form](https://docs.google.com/forms/d/e/1FAIpQLSemd1JlJB2lyW0Fal6OA3MM7cmxpqh0GQt145lrzmqqIFQIeA/viewform).  After receiving the application, the HPC Centre will review it and contact you to inform you on the following steps.
 
-# HPC demo-cases
+## HPC demo-cases
 
 Reusable examples (with codes) of HPC applications in various scientific domains: [https://gitlab.com/eurocc-latvia](https://gitlab.com/eurocc-latvia).
 
