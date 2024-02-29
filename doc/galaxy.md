@@ -10,3 +10,4 @@ RTU HPC Galaxy instance is available here: [https://galaxy.hpc.rtu.lv](https://g
 Access to this galaxy can be requested by sending an email to hpc@rtu.lv. You should be able to auto-register also with your RTU HPC cluster credentials. Any requests regarding tools or reference datasets can be sent to support e-mail as well. 
 
 ## Galaxy demonstration
+ <iframe src="https://slides.com/viktorszagorskis-1/rtu-hpc-90db09/embed?byline=hidden&share=hidden" width="576" height="420" title="GALAXY ON RTU HPC" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
