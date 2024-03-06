@@ -22,7 +22,7 @@ If this window appears, enter a new password for your user.
 ## Select kernel
 
 In jupyterhub you can use both python and R languages. To use the desired one you need to select the proper kernel when opening a new notebook file. In the image below you can see the choices of either the Python or R kernels.
-![](./images/jupyter_interface.png)
+![](./images/jupyter_kernel.png)
 
 ## Register a group of students
 
