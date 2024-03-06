@@ -23,7 +23,7 @@ Enter your username and password.
 On the left side click on the button "Users" and then on the right side on "Add user".
 ![](./images/jupyter_2.png)
 
-Enther the student's username in the field "Username" [**it is advisable to not use an email address as a student's username, thiss may cause errors**] and in the box "Select existing group" enter the name of the desired classroom to which you wish to add the student.
+Enther the student's username in the field "Username" [**it is advisable to not use an email address as a student's username, thiss may cause errors**], verify that the email verified box is set to **ON** and in the box "Select existing group" enter the name of the desired classroom to which you wish to add the student.
 ![](./images/jupyter_3.png)
 ![](./images/jupyter_3_1.png)
 
