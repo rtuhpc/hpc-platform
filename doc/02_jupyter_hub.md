@@ -8,7 +8,15 @@ Access to the Jupyther Hub should be requested through the RTU HPC center [regis
 Only the university employees (researchers, instructors, administration) may request access. 
 Students are invited by their course instructors (see the procedure [in the next section](https://hpc-platforma.rtu.lv/02_jupyter_hub.html#register-group-of-students)). 
 
-### Login to Jupyter Hub... TBC
+### Login to Jupyter Hub
+
+To login in jupyter first go to [**https://jhub.hpc.rtu.lv/**](https://jhub.hpc.rtu.lv/)
+
+Then enter your username and password
+
+If this window appears, enter a new password for your user.
+![](./images/jupyter_password.png)
+
 ![](./images/jupyter_interface.png)
 
 ## Register group of students
