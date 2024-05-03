@@ -1,4 +1,4 @@
-#Seqr portal 
+# Seqr portal 
 Seqr is an open-source genomic data interpretation platform. It provides a user-friendly web interface for rare disease diagnosis and gene discovery. It allows uploading VCF (variant call format) files and annotates them with relevant information for Mendelian analysis. The platform supports variant filtering and searching in gene lists to prioritise variants meeting certain criteria.
 
 ## Access
