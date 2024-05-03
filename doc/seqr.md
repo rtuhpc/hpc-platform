@@ -4,4 +4,4 @@ Seqr is an open-source genomic data interpretation platform. It provides a user-
 ![](./images/Screenshot 2024-05-03 at 13.50.03.png)
 
 ## Access
-Seqr is provided by the Riga Stradins University. For access please contact Head of the Bioinformatics Group Baiba Vilne [baiba.vilne@rsu.lv](baiba.vilne@rsu.lv)
+Seqr is provided by the Riga Stradins University. For access, please contact head of the Bioinformatics group, Baiba Vilne ([baiba.vilne@rsu.lv](baiba.vilne@rsu.lv)).
