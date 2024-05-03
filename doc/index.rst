@@ -16,6 +16,7 @@ This page provides instructions for using different tools and interfaces availab
    hpc.md
    galaxy.md
    02_jupyter_hub.md
+   seqr.md
    lti.md
 
 The central element of the HPC platform is a user-friendly interface for reserving and accessing computing resources. The interface provides access to supercomputer and virtualization infrastructure (virtual classrooms), as well as HPC-enabled thematic web portals for data analysis and visualization.
