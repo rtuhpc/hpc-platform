@@ -24,6 +24,37 @@ If this window appears, enter a new password for your user.
 In jupyterhub you can use both python and R languages. To use the desired one you need to select the proper kernel when opening a new notebook file. In the image below you can see the choices of either the Python or R kernels.
 ![](./images/jupyter_kernel.png)
 
+## Install R libraries locally
+
+Create a Local Directory for Your R Packages:
+
+```r
+dir.create("R_packages")
+```
+Set the Library Path:
+
+```r
+.libPaths(c(.libPaths(), "R_packages"))
+```
+Install the Package:
+
+```r
+install.packages("your_package_name", lib = "R_packages")
+```
+> Replace "your_package_name" with the name of the package you want to install.
+
+Load the Package:
+
+```r
+library(your_package_name, lib.loc = "R_packages")
+```
+> Replace your_package_name with the actual name of the package.
+
+
+If package installation fails, use this command to see what causes the error
+```r
+install.packages("your_package_name", lib = "R_packages", verbose = TRUE, keep_output = TRUE)
+```
 ## Register a group of students
 
 You must have an instructor account to register and invite group of students.
