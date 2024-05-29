@@ -15,7 +15,13 @@ In MyAccessID window under "Login with" search for your university's identity pr
   
 In case of the Riga Technical University, select identity provider "Riga Technical University (Office 365)".
 ![](./images/waldur-myaccessid1.png)
-  
+
+Similar to University of Latvia:
+![](./images/waldur-myaccessid1-2.png)
+
+and Riga Stradiņš University
+![](./images/waldur-myaccessid1-1.png)
+
 You will be redirected to your organizations identity provider authorization portal, in this case RTU ORTUS.  Please follow all authentication steps begining with your login:
 ![](./images/waldur-keycloak2.png)
   
