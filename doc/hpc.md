@@ -1,8 +1,6 @@
 # HPC cluster (supercomputer)
 
-A High-Performance Computing (HPC) cluster consists of several compute nodes interconnected by a fast computer network (e.g., InfiniBand). Compute nodes are individual servers within the cluster that perform computational tasks. HPC clusters can be used for parallel computing, executing a complicated task simultaneously on several compute nodes, and distributed computing, performing smaller independent tasks on separate nodes or processor cores. HPC cluster allows solving complex problems faster and has the ability to tackle larger datasets.
-
-Users access the HPC cluster remotely via the Linux command-line interface using secure shell (SSH) protocol. Multiple users can work concurrently, each with their own computing tasks and workflows, and within their working directory to store data.
+A High-Performance Computing (HPC) cluster consists of several compute nodes interconnected by a fast computer network (e.g., InfiniBand). Compute nodes are individual servers within the cluster that perform computational tasks. HPC clusters can be used for parallel computing, executing a complicated task simultaneously on several compute nodes, and distributed computing, performing smaller independent tasks on separate nodes or processor cores. HPC cluster allows solving complex problems faster and has the ability to tackle larger datasets. Multiple users can work concurrently, each with their own computing tasks and workflows, and within their working directory to store data.
 
 ## Apply for HPC
 To receive access to the HPC cluster RUDENS
@@ -47,7 +45,9 @@ By pressing `Deploy,` the form will open where you should specify your deposit (
 
 ### Connect to the HPC cluster
 
-You need an SSH key to connect to the HPC cluster RUDENS. Passwords are not supported for the accounts requested through the self-service portal. If you don't have an SSH key, you can generate one using instructions in [SSH Academy](https://www.ssh.com/academy/ssh/keygen) or [our HPC user-guide](https://hpc-guide.rtu.lv/appendix.html#generating-keys-on-windows-using-mobaxterm).
+Users access the HPC cluster RUDENS remotely using secure shell (SSH) protocol. Work with the cluster occurs via a dedicated server (login node) with the Linux command-line interface and job management tools.
+
+You need an SSH key to connect to the RUDENS login node. Passwords are not supported for the accounts requested through the self-service portal. If you don't have an SSH key, you can generate one using instructions in [SSH Academy](https://www.ssh.com/academy/ssh/keygen) or [our HPC user-guide](https://hpc-guide.rtu.lv/appendix.html#generating-keys-on-windows-using-mobaxterm).
 
 Before connection, your SSH public key must be uploaded to the Waldur self-service portal. 
 - Go to the top right of the screen and click on your name to open the account window. 
@@ -64,7 +64,7 @@ Before connection, your SSH public key must be uploaded to the Waldur self-servi
  - For MoabXterm: click `Settings` => `Configuration` => `SSH` tab => in the agent section click on the `+` sign to import your private key
 
 In the Session sectoin specify your username and the login node Host name as shown in the example. We recomend saving the session for future use.
-![Putty](images/putty_window.png)
+![Putty](images/putty_window.jpg)
 
 **Note: if the login node requests the password during connection, your SSH key is not recognized or configured correctly.**
 
