@@ -11,7 +11,9 @@ To receive access to the HPC cluster RUDENS
 
 ## Get access to the HPC cluster RUDENS
 
-If your application is approved, you will receive an e-mail inviting you to a project in the Waldur self-service portal. Note that the invitation will expire in 2 weeks. In the portal, you will acquire an HPC account on the cluster.
+After the application is approved, you will receive an email inviting you to participate in a project in the Waldur self-service portal. You may also receive an email even if you didn't apply for HPC yourself, but your project leader or course instructor has invited you. Note that the invitation will expire in 2 weeks. 
+
+In the portal, you will acquire an account on the HPC cluster.
 
 ### Connect to Waldur self-service portal
 Follow the link to the National Open HPC Platform: [https://nohap.hpc-net.lv](https://nohap.hpc-net.lv)
