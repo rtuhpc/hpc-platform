@@ -22,7 +22,7 @@ Follow the link to the National Open HPC Platform: [https://nohap.hpc-net.lv](ht
 
 ```{include} ./include/waldur_invite.md
 ```
-### Request HPC resource
+### Request HPC resource (allocation)
 You must belong to a project/study course to perform this step. 
 
 First, check whether your project already has active HPC allocation. Go to Project view and check the Resources section for the existing RTU HPC (RUDENS) resource.  
@@ -31,6 +31,8 @@ First, check whether your project already has active HPC allocation. Go to Proje
 Allocation is a certain amount of computing resources (CPU hours, GPU hours, memory) that is allocated for project use, and it is expressed in its price in EUR. Usually, there should be only one active allocation per project that all project members can use. If allocated credit is spent, you may request a new allocation or extend the existing one by depositing additional funds.
 
 To start using the HPC cluster, press on the allocated resource name (in the example, "HPC cluster allocation"). In the resource view, you will get additional information about your username and access details.
+![deploy HPC](images/waldur_project_HPC_4.jpg)
+
 **Request new HPC resource**. If your project doesn't have active HPC allocation, you can request it through the marketplace. Press the `Add resource` button and look for RUDENS (RTU HPC) offering. 
 ![marketplace HPC](images/waldur_project_HPC_2.jpg)
 
