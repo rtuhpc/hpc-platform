@@ -4,14 +4,14 @@ A High-Performance Computing (HPC) cluster consists of several compute nodes int
 
 Users access the HPC cluster remotely via the Linux command-line interface using secure shell (SSH) protocol. Multiple users can work concurrently, each with their own computing tasks and workflows, and within their working directory to store data.
 
-## Request access
+## Apply for HPC
 To receive access to the HPC cluster RUDENS
 - research groups, course instructors, and individual students working on thesis/research must fill in the [APPLICATION FORM](https://docs.google.com/forms/d/e/1FAIpQLSemd1JlJB2lyW0Fal6OA3MM7cmxpqh0GQt145lrzmqqIFQIeA/viewform).  After receiving the application, the HPC Centre will review it and contact you on the following steps.
 - students involved in the study course and need HPC as part of their course curriculum should receive an invitation from their course instructor.
 
-## Getting started
+## Get access to the HPC cluster RUDENS
 
-If your application is approved, you will receive an e-mail inviting you to a project in the Waldur self-service portal. The invitation will expire in 2 weeks.
+If your application is approved, you will receive an e-mail inviting you to a project in the Waldur self-service portal. Note that the invitation will expire in 2 weeks. In the portal, you will acquire an HPC account on the cluster.
 
 ### Connect to Waldur self-service portal
 Follow the link to the National Open HPC Platform: [https://nohap.hpc-net.lv](https://nohap.hpc-net.lv)
@@ -66,7 +66,7 @@ In the Session sectoin specify your username and the login node Host name as sho
 
 **Note: if the login node requests the password during connection, your SSH key is not recognized or configured correctly.**
 
-### Start using the HPC cluster
+## Start using the HPC cluster
 
 [Follow the link to the user guide on using the HPC cluster RUDENS.](https://hpc-guide.rtu.lv)
 
