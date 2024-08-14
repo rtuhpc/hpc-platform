@@ -25,18 +25,22 @@ Follow the link to the National Open HPC Platform: [https://nohap.hpc-net.lv](ht
 ### Request HPC resource (allocation)
 You must belong to a project/study course to perform this step. 
 
-First, check whether your project already has active HPC allocation. Usually, **there should be only one active allocation per project** that all project members can use.Go to Project view and check the Resources section for the existing RTU HPC (RUDENS) resource (alllocation).  
+First, check whether your project already has active HPC allocation. Usually, **there should be only one active allocation per project** that all project members can use. Go to `Project` view and check the `Resources` section for the existing "RTU HPC (RUDENS)" resource (alllocation).
+
 ![HPC resource](images/waldur_project_HPC_1.jpg)
 
 Allocation is a certain amount of computing resources (CPU hours, GPU hours, memory) that is allocated for project use, and it is expressed in its price in EUR. Initial credit (EUR) is deposited when HPC service is obtained through the Marketplace. If allocated credit is spent, you may request a new allocation or extend the existing one by depositing additional funds. Note that it is virtual credit that sets resource usage limits; it is not the front payment. Real money is charged only according to actual use and according to an agreement with the HPC center.
 
 To start using the HPC cluster, press on the allocated resource name (in the example, "HPC cluster allocation"). In the resource view, you will get additional information about your username and access details.
+
 ![deploy HPC](images/waldur_project_HPC_4.jpg)
 
 **Request new HPC resource**. If your project doesn't have active HPC allocation, you can request it through the marketplace. Press the `Add resource` button and look for RUDENS (RTU HPC) offering. 
+
 ![marketplace HPC](images/waldur_project_HPC_2.jpg)
 
 By pressing `Deploy,` the form will open where you should specify your deposit (in EURs) and an arbitrary name for the resource. Then press `Create`, and the request will be submitted to the RTU HPC center for review and approval.
+
 ![deploy HPC](images/waldur_project_HPC_3.jpg)
 
 ### Connect to the HPC cluster
