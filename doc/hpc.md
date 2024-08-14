@@ -15,9 +15,11 @@ If your application is approved, you will receive an e-mail inviting you to a pr
 
 ### Connect to Waldur self-service portal
 Follow the link to the National Open HPC Platform: [https://nohap.hpc-net.lv](https://nohap.hpc-net.lv)
+
 ```{include} ./include/waldur_access.md
 ```
 ### Invite participants
+
 ```{include} ./include/waldur_invite.md
 ```
 ### Request HPC resource
