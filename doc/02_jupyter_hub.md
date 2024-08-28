@@ -83,3 +83,44 @@ Enther the password that the student will use to log in in the fields “Passwor
 That is it! A new student has been registered to your classroom. **The student does not receive his login details automatically**, you need to give the student his username and password manually.
 
 Login to jupyter: [https://jhub.hpc.rtu.lv](https://jhub.hpc.rtu.lv)
+
+## Impersonate users to view their files
+If you need to view a student's files you can follow the steps below.
+### Step 1: Log in to the Keycloak Admin Console
+
+1. Open your web browser and navigate to the Keycloak Admin Console. This is typically accessible via `[http://<keycloak-server>/auth/admin/](https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console)`.
+2. Log in using your credentials.
+
+## Step 2: Navigate to the Users Section
+
+1. In the left-hand menu, click on **Users**. This will take you to the user management page, where you can view and manage all users within the selected realm.
+
+## Step 3: Search for the User
+
+1. In the Users section, you can search for the user you want to impersonate by using their username, email, or other attributes.
+2. Enter the search criteria in the search box and click on **Search** or click **All users**.
+
+## Step 4: Impersonate the User
+
+1. Once you find the user, you will see a button labeled **Impersonate** at the right side of the user's row.
+2. Click on the **Impersonate** button.
+
+   - **Note:** If you do not see the Impersonate button, you may not have the necessary permissions. You will need to contact hpc@rtu.lv to ensure you have the **impersonation** role or sufficient privileges.
+
+4. After clicking **Impersonate**, a new tab or window will open, and you will be logged in as the selected user.
+
+## Step 5: Perform the Necessary Actions
+
+1. In the impersonated session, you can open a new tab and navigate to jhub.hpc.rtu.lv as the user, access all files, and perform any actions as neede.
+
+## Step 6: End the Impersonation Session
+
+1. Once you have finished performing the necessary tasks, you can end the impersonation session.
+2. To do this, simply log out of the user session in the keycloak tab.
+
+## Step 7: Return to the Admin Console
+
+1. Enter `[http://<keycloak-server>/auth/admin/](https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console)` to get to your Keycloak Admin Console and enter your login information again.
+2. Once logged in you can continue from Step 2.
+
+
