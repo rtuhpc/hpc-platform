@@ -92,6 +92,9 @@ Reusable examples (with codes) of HPC applications in various scientific domains
 
 Demonstrations are prepared by EuroCC National HPC Competence Centre of Latvia.
 
+## Parallel MATLAB
+Parallel MATLAB toolbox virtually widens resources available for MATLAB (number of CPU’s, memory, location) by directing tasks to the HPC cluster.
+
 ## Additional guides
 
 [MATLAB Parallel computing server](https://hpc.rtu.lv/matlabmdcs-hpc/?lang=en)
