@@ -95,8 +95,8 @@ Demonstrations are prepared by EuroCC National HPC Competence Centre of Latvia.
 ## Parallel MATLAB
 Parallel MATLAB server virtually widens resources available for MATLAB (number of CPU’s, memory, location) by directing tasks to the HPC cluster.
 
-[Download getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf)
-[Download support package](./files/rtu.Desktop.zip)
+- [Download getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf)
+- [Download support package](./files/rtu.Desktop.zip)
 
 Only Matlab versions R2023b, R2024a are supported.
 
