@@ -93,11 +93,10 @@ Reusable examples (with codes) of HPC applications in various scientific domains
 Demonstrations are prepared by EuroCC National HPC Competence Centre of Latvia.
 
 ## Parallel MATLAB
-Parallel MATLAB toolbox virtually widens resources available for MATLAB (number of CPU’s, memory, location) by directing tasks to the HPC cluster.
+Parallel MATLAB server virtually widens resources available for MATLAB (number of CPU’s, memory, location) by directing tasks to the HPC cluster.
 
-[Getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf)
-
-[Support package](./files/rtu.Desktop.zip)
+[Download getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf)
+[Download support package](./files/rtu.Desktop.zip)
 
 Only Matlab versions R2023b, R2024a are supported.
 
