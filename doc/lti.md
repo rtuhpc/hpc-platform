@@ -1,8 +1,11 @@
-# Integration with Moodle
+# Integration with MOODLE
 The project team has developed a Command-line interface (CLI) tool for the Moodle e-learning environment based on the Learning Tools Interoperability (LTI) protocol. The LTI-CLI tool allows instructors and students to access the HPC login node as an embedded window in the e-learning course to demonstrate the basic functionality of the cluster. No additional registration is needed by students: identity is automatically ensured by Moodle sign-in.
 ![](./images/lti-10.png)
 
-## How to configure MOODLE to access HPC
+## Getting started with LTI-CLI in MOODLE
+The course instructor should add the LTI-CLI tool to their course. Detailed instructions are provided individually upon request as they contain sensitive information.
+
+When connected to the HPC login node (Linux machine), [THIS GUIDE](https://hpc-guide.rtu.lv/07_job_managment.html) should be used for cluster command reference. Please bear in mind that the LTI-CLI tool has limited functionality, and only basic job commands such as qsub, qstat, and qdel will work.
 
 ## Introduction to Learning Tools Interoperability (LTI)
 *For Instructional Designers creating content <br>
