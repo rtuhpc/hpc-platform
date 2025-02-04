@@ -1,9 +1,12 @@
-# Integration with e-learning environment
+# Integration with Moodle
+The project team has developed a Command-line interface (CLI) tool for the Moodle e-learning environment based on the Learning Tools Interoperability (LTI) protocol. The LTI-CLI tool allows instructors and students to access the HPC login node as an embedded window in the e-learning course to demonstrate the basic functionality of the cluster. No additional registration is needed by students: identity is automatically ensured by Moodle sign-in.
+![](./images/lti-10.png)
 
-*For Instructional Designers creating content <br>
-and Instructors teaching High-Performance Computing (HPC)*
+## How to configure MOODLE to access HPC
 
 ## Introduction to Learning Tools Interoperability (LTI)
+*For Instructional Designers creating content <br>
+and Instructors teaching High-Performance Computing (HPC)*
 Learning Tools Interoperability (LTI) is a technology standard widely used in the education sector to enhance the interoperability and integration of various learning tools and systems. LTI enables seamless connectivity between learning management systems (LMS) and external learning tools/resources, allowing instructors and learners to access multiple educational resources and services within their LMS environment. This brief guide will provide an overview of LTI and its benefits for instructional designers.
 
 ![](./images/lti-01.png)
