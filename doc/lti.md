@@ -7,6 +7,7 @@ The project team has developed a Command-line interface (CLI) tool for the Moodl
 ## Introduction to Learning Tools Interoperability (LTI)
 *For Instructional Designers creating content <br>
 and Instructors teaching High-Performance Computing (HPC)*
+
 Learning Tools Interoperability (LTI) is a technology standard widely used in the education sector to enhance the interoperability and integration of various learning tools and systems. LTI enables seamless connectivity between learning management systems (LMS) and external learning tools/resources, allowing instructors and learners to access multiple educational resources and services within their LMS environment. This brief guide will provide an overview of LTI and its benefits for instructional designers.
 
 ![](./images/lti-01.png)
