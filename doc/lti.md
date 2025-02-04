@@ -7,6 +7,10 @@ The course instructor should add the LTI-CLI tool to their course. Detailed inst
 
 When connected to the HPC login node (Linux machine), [THIS GUIDE](https://hpc-guide.rtu.lv/07_job_managment.html) should be used for cluster command reference. Please bear in mind that the LTI-CLI tool has limited functionality, and only basic job commands such as qsub, qstat, and qdel will work.
 
+The following video (in Latvian) demonstrated how to use LTI on MOODLE to access the HPC cluster. The video is from an early stage of the tool development, so it may not reflect the latest functionality. 
+
+<iframe src="https://player.vimeo.com/video/893010518?h=9ebfbdea00" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ## Introduction to Learning Tools Interoperability (LTI)
 *For Instructional Designers creating content <br>
 and Instructors teaching High-Performance Computing (HPC)*
@@ -233,11 +237,3 @@ Here's how they are involved:
    - Once the LTI Tool successfully verifies the request's signature using the platform's public key, it establishes trust with the platform. This trust enables further secure communication and exchange of information between the platform and the LTI Tool.
 
 In summary, private and public encryption keys are used in the communication process to establish trust, verify the authenticity of messages, and ensure secure communication between the platform and the LTI Tool. The platform's private key is used to sign the messages, while the LTI Tool uses the platform's public key to verify the signatures and establish trust with the platform.
-
-## How to use LTI on MOODLE to access HPC cluster
-
-The following video is in Latvian.
-
-<iframe src="https://player.vimeo.com/video/893010518?h=9ebfbdea00" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-*To be continued...*
