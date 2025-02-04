@@ -42,7 +42,7 @@ To integrate an external tool using LTI, instructional designers typically follo
 ### Conclusion:
 Learning Tools Interoperability (LTI) empowers instructional designers by seamlessly integrating external tools and resources into learning management systems. By leveraging LTI, designers can enhance their courses with a wide range of educational resources while maintaining a streamlined workflow. LTI promotes personalization, contextualization, scalability, and the ability to meet evolving instructional needs. Embracing LTI opens doors to a world of possibilities for instructional designers to create engaging and compelling learning experiences.
 
-## Challenges for LTI users
+### Challenges for LTI users
 
 *Challenges for Instructional Designers Using LTI in High-Performance Computing Teaching*
 
