@@ -3,12 +3,12 @@ The project team has developed a Command-line interface (CLI) tool for the Moodl
 ![](./images/lti-10.png)
 
 ## Getting started with LTI-CLI in MOODLE
-The course instructor should add the LTI-CLI tool to their course. Detailed instructions are provided individually upon request as they contain sensitive information.
+The course instructor should add the LTI-CLI tool to their course. **Detailed instructions are provided individually upon request as they contain sensitive information.**
 
 When connected to the HPC login node (Linux machine) throguh LTI-CLI, [THIS GUIDE](https://hpc-guide.rtu.lv/07_job_managment.html) should be used for cluster command reference. Please bear in mind that the LTI-CLI tool has limited functionality, and only basic job commands such as qsub, qstat, and qdel will work.
 
 The following video (in Latvian) demonstrated how to use LTI on MOODLE to access the HPC cluster. The video is from an early stage of the tool development, so it may not reflect the latest functionality.
-<iframe src="https://player.vimeo.com/video/893010518?h=9ebfbdea00" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/893010518?h=9ebfbdea00" width="640" height="164" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Introduction to Learning Tools Interoperability (LTI)
 *For Instructional Designers creating content <br>
