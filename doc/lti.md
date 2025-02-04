@@ -67,9 +67,9 @@ When instructional designers use Learning Tools Interoperability (LTI) in teachi
 Overcoming these challenges requires collaboration between instructional designers, IT professionals, HPC experts, and tool providers. By actively addressing these challenges, instructional designers can leverage LTI to enhance the teaching and learning experiences in High-Performance Computing.
 
 
-## We use LTI version 1.3
+### We use LTI version 1.3
 
-### About LTI 1.3
+#### About LTI 1.3
  - **LTI 1.3 offers**: 
 Improved security based on OAuth2 and JSON Web Tokens makes security updates safer and more accessible. 
 Improved documentation and directions for implementation.
@@ -85,9 +85,9 @@ LTI 1.3 improves existing services by allowing new extensions to be layered on t
 - **Assignment and Grade Service** makes passing grade information between the tool and the Learning Platform easier. This extension was named the outcome service previously.
 
 
-### How systems communicate in LTI 1.3
+#### How systems communicate in LTI 1.3
 
-#### Initial view
+##### Initial view
 
 In LTI 1.3, the initial part(stage) of the communication protocol between the PLATFORM (LTI Tool Consumer) and the LTI TOOL involves the platform requesting validation from the LTI Tool and the Tool performing LTI validation on the Platform side. Here are the steps involved:
 
@@ -107,7 +107,7 @@ At this point, the PLATFORM has been validated by the LTI TOOL, establishing the
 
 This initial part of the communication protocol in LTI 1.3 ensures that the platform and tool authenticate and validate each other before proceeding with the exchange of information.
 
-#### Another view
+##### Another view
 
 Here are the steps of the communication process in LTI 1.3 following the initial stage:
 
