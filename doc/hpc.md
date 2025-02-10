@@ -45,7 +45,15 @@ By pressing `Deploy,` the form will open where you should specify your deposit (
 
 ### Connect to the HPC cluster
 
-Users access the HPC cluster RUDENS remotely using secure shell (SSH) protocol. Work with the cluster occurs via a dedicated server (login node) with the Linux command-line interface and job management tools.
+Users access the HPC cluster RUDENS remotely using secure shell (SSH) protocol or HTTPS web-terminal. Work with the cluster occurs via a dedicated server (login node) with the Linux command-line interface and job management tools.
+
+#### Web-terminal access
+Open OnDemand (OOD) portal provides a web-based terminal in your browser. No SSH password or keys are required. A simple file browser with upload/download functionality is available in OOD.
+
+Go to Open OnDemand and look for the Clusters tab. Select `RUDENS Shell_access`.
+![OOD](images/web-terminal.png)
+
+#### SSH access
 
 You need an SSH key to connect to the RUDENS login node. Passwords are not supported for the accounts requested through the self-service portal. If you don't have an SSH key, you can generate one using instructions in [SSH Academy](https://www.ssh.com/academy/ssh/keygen) or [our HPC user-guide](https://hpc-guide.rtu.lv/appendix.html#generating-keys-on-windows-using-mobaxterm).
 
