@@ -2,7 +2,7 @@ Please start by clicking on [Sign in with RTU HPC]
 ![](images/waldur-login.png)
   
 By selecting MyAccessID method, you should be able to authenticate with your university login details or eEIDAS.
-![](images/waldur-keycloak0.png)
+![](images/waldur-keycloak1.png)
   
 In MyAccessID window under "Login with" search for your university's identity provider.  
 ![](images/waldur-myaccessid0.png)
