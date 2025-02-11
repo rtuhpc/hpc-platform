@@ -7,7 +7,7 @@ To receive access to the HPC cluster RUDENS
 - research groups, course instructors, and individual students working on thesis/research must fill in the [APPLICATION FORM](https://docs.google.com/forms/d/e/1FAIpQLSemd1JlJB2lyW0Fal6OA3MM7cmxpqh0GQt145lrzmqqIFQIeA/viewform).  After receiving the application, the HPC Centre will review it and contact you on the following steps.
 - students involved in the study course and need HPC as part of their course curriculum should receive an invitation from their course instructor.
 
-## Get access to the HPC cluster RUDENS
+## Get access to the HPC cluster RUDENS (after approval)
 
 After the application is approved, you will receive an email inviting you to participate in a project in the Waldur self-service portal. You may also receive an email even if you didn't apply for HPC yourself, but your project leader or course instructor has invited you. Note that the invitation will expire in 2 weeks. 
 
