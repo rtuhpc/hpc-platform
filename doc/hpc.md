@@ -79,19 +79,20 @@ Before connection, your SSH public key must be uploaded to the Waldur self-servi
 #### 3. Use the key
 **On Linux/macOS systems**, if the generated keys are stored in the default directory ~/.ssh/, connect to a cluster by using the `Access resource` button in the self-service portal or manually open the command line (terminal) and run the following command:
    ```
-   ssh hpc000XX@ui-2.hpc.rtu.lv
+   ssh username@ui-2.hpc.rtu.lv
    ```
 If you stored the keys in other location then default (~/.ssh/), additonally specify the path to the private key:
    ```
-   ssh -i ./id_rsa hpc000XX@ui-2.hpc.rtu.lv
+   ssh -i ./id_rsa username@ui-2.hpc.rtu.lv
    ```
+Change 'username' to your actual login name, which you can see in the resource view in Waldur.
 **For Windows SSH clients**, such as Putty or MobaXterm, the path to private key file must be specified in the connection settings.
  - For Putty: click `Connection` => `SSH` => `Auth` => `Browse` for the private key
  - For MoabXterm: click `Settings` => `Configuration` => `SSH` tab => in the agent section click on the `+` sign to import your private key
 
 In the Session sectoin specify your username and the login node Host name as shown in the example. We recomend saving the session for future use.
 ![Putty](images/putty_window.jpg)
-Change 'username' to your actual login name (hpc000XX), which you can see in the resource view in Waldur.
+Change 'username' to your actual login name, which you can see in the resource view in Waldur.
 
 **Note: if the login node requests the password during connection, your SSH key is not recognized or configured correctly.**
 
