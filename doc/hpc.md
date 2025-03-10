@@ -86,6 +86,7 @@ If you stored the keys in other location then default (~/.ssh/), additonally spe
    ssh -i ./id_rsa username@ui-2.hpc.rtu.lv
    ```
 Change 'username' to your actual login name, which you can see in the resource view in Waldur.
+
 **For Windows SSH clients**, such as Putty or MobaXterm, the path to private key file must be specified in the connection settings.
  - For Putty: click `Connection` => `SSH` => `Auth` => `Browse` for the private key
  - For MoabXterm: click `Settings` => `Configuration` => `SSH` tab => in the agent section click on the `+` sign to import your private key
