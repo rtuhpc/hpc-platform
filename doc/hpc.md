@@ -61,7 +61,12 @@ Go to our OOD ([https://ood.hpc.rtu.lv/](https://ood.hpc.rtu.lv/)) or press `Acc
 You need an SSH key to connect to the RUDENS login node. Passwords are not supported for the accounts requested through the self-service portal. Follow the described steps to prepere a SSH key.
 
 #### 1. Generate a SSH key
-If you don't have an SSH key, you can generate one using instructions in [SSH Academy](https://www.ssh.com/academy/ssh/keygen) or [our HPC user-guide](https://hpc-guide.rtu.lv/appendix.html#generating-keys-on-windows-using-mobaxterm).
+If you don't have an SSH key, you can generate one using instructions in [our HPC user-guide](https://hpc-guide.rtu.lv/appendix.html#generating-keys-on-windows-using-mobaxterm) (for Windows).  
+If you use Linux or MacOS, open the Terminal app (command line) and simply execute the command:
+  ```
+   ssh-keygen
+   ```
+Two files will be generated: private key (default name id_rsa) and public key (id_rsa.pub). Keep the private key secret. For a more detailed explanation of SSH keys, follow the to [SSH Academy](https://www.ssh.com/academy/ssh/keygen).
 
 #### 2. Upload the public key
 Before connection, your SSH public key must be uploaded to the Waldur self-service portal. 
@@ -75,7 +80,11 @@ Before connection, your SSH public key must be uploaded to the Waldur self-servi
 #### 3. Use the key
 **On Linux/macOS systems**, if the generated keys are stored in the default directory ~/.ssh/, connect to a cluster by using the `Access resource` button in the self-service portal or manually open the command line (terminal) and run the following command:
    ```
-   ssh username@ui-2.hpc.rtu.lv
+   ssh hpc000XX@ui-2.hpc.rtu.lv
+   ```
+If you stored the keys in other location then default (~/.ssh/), additonally specify the path to the private key:
+   ```
+   ssh -i ./id_rsa hpc000XX@ui-2.hpc.rtu.lv
    ```
 **For Windows SSH clients**, such as Putty or MobaXterm, the path to private key file must be specified in the connection settings.
  - For Putty: click `Connection` => `SSH` => `Auth` => `Browse` for the private key
