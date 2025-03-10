@@ -43,27 +43,27 @@ By pressing `Deploy,` the form will open where you should specify your deposit (
 
 ![deploy HPC](images/waldur_project_HPC_3.jpg)
 
-### Connect to the HPC cluster
+## Connect to the HPC cluster
 
 Users access the HPC cluster RUDENS remotely using secure shell (SSH) protocol or HTTPS web-terminal. Work with the cluster occurs via a dedicated server (login node) with the Linux command-line interface and job management tools. The next figure visualize a user connection to the cluster.
 
 ![scheme](images/hpc_cluster_scheme.png)
 
-#### Web-terminal access
+### Web-terminal access
 Open OnDemand (OOD) portal provides a web-based terminal in your browser. No SSH password or keys are required. It will use the same identity you provided when connected to the Waldur self-service portal. A simple file browser with upload/download functionality is available in OOD.
 
 Go to our OOD ([https://ood.hpc.rtu.lv/](https://ood.hpc.rtu.lv/)) or press `Access resource` button in the self-service portal and look for the Clusters tab. Select `RUDENS Shell_access`.
 
 ![OOD](images/web-terminal.png)
 
-#### SSH access
+### SSH access
 
 You need an SSH key to connect to the RUDENS login node. Passwords are not supported for the accounts requested through the self-service portal. Follow the described steps to prepere a SSH key.
 
-##### 1. Generate a SSH key
+#### 1. Generate a SSH key
 If you don't have an SSH key, you can generate one using instructions in [SSH Academy](https://www.ssh.com/academy/ssh/keygen) or [our HPC user-guide](https://hpc-guide.rtu.lv/appendix.html#generating-keys-on-windows-using-mobaxterm).
 
-##### 2. Upload the public key
+#### 2. Upload the public key
 Before connection, your SSH public key must be uploaded to the Waldur self-service portal. 
 - Go to the top right of the screen and click on your name to open the account menu. 
 - Click on the `Credentials` link to open a sub-menu where you can select `SSH keys`.
@@ -72,7 +72,7 @@ Before connection, your SSH public key must be uploaded to the Waldur self-servi
 ![public key](images/hpc_paste_rsa-key.png)
 - **Wait at least 5 minutes** while the key is synchronized to the cluster.
 
-##### 3. Use the key
+#### 3. Use the key
 **On Linux/macOS systems**, if the generated keys are stored in the default directory ~/.ssh/, connect to a cluster by using the `Access resource` button in the self-service portal or manually open the command line (terminal) and run the following command:
    ```
    ssh username@ui-2.hpc.rtu.lv
