@@ -61,15 +61,14 @@ Go to our OOD ([https://ood.hpc.rtu.lv/](https://ood.hpc.rtu.lv/)) or press `Acc
 You need an SSH key to connect to the RUDENS login node. Passwords are not supported for the accounts requested through the self-service portal. Follow the described steps to prepere a SSH key.
 
 #### 1. Generate a SSH key
-If you don't have an SSH key, you can generate one using instructions in [our HPC user-guide](https://hpc-guide.rtu.lv/appendix.html#generating-keys-on-windows-using-mobaxterm) (for Windows).  
-If you use Linux or MacOS, open the Terminal app (command line) and simply execute the command:
+If you don't have an SSH key, you can generate one using instructions in [our HPC user-guide](https://hpc-guide.rtu.lv/appendix.html#generating-keys-on-windows-using-mobaxterm) (for Windows). If you use Linux or MacOS, open the Terminal app (command line) and simply execute the command:
   ```
    ssh-keygen
    ```
 Two files will be generated: private key (default name id_rsa) and public key (id_rsa.pub). Keep the private key secret. For a more detailed explanation of SSH keys, follow the to [SSH Academy](https://www.ssh.com/academy/ssh/keygen).
 
 #### 2. Upload the public key
-Before connection, your SSH public key must be uploaded to the Waldur self-service portal. 
+Before connection, your SSH public key must be uploaded to the Waldur self-service portal. By doing so, your public key will be available for the HPC cluster to recognize you on the SSH connection.
 - Go to the top right of the screen and click on your name to open the account menu. 
 - Click on the `Credentials` link to open a sub-menu where you can select `SSH keys`.
 ![credentials](images/hpc_credentials.png)
@@ -92,6 +91,7 @@ If you stored the keys in other location then default (~/.ssh/), additonally spe
 
 In the Session sectoin specify your username and the login node Host name as shown in the example. We recomend saving the session for future use.
 ![Putty](images/putty_window.jpg)
+Change 'username' to your actual login name (hpc000XX), which you can see in the resource view in Waldur.
 
 **Note: if the login node requests the password during connection, your SSH key is not recognized or configured correctly.**
 
