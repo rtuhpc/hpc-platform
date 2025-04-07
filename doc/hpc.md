@@ -143,7 +143,7 @@ Complete.  Default cluster profile set to "Rudens R2024a".
 For detailed instruction on setting up cluster profile follow to [getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf).
 
 ### Set storage location
-For users who got their account through the Waldur, their cluster home directories reside on `/home/`. They must change the default location from `/home_beegfs/` to `/home/`. If you are not sure, you may get your home location by connecting to the cluster (SSH or Web-terminal) and issuing the command:
+For users who got their account through the Waldur, their cluster home directories reside on `/home/`. They must change the default location from `/home_beegfs/` to `/home/` in cluster profile configuration. If you are not sure, you may get your home location by connecting to the cluster (SSH or Web-terminal) and issuing the command:
 ```
 echo $HOME
 ```
