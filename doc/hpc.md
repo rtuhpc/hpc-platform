@@ -54,6 +54,7 @@ Open OnDemand (OOD) portal provides a web-based terminal in your browser. No SSH
 
 Go to our OOD ([https://ood.hpc.rtu.lv/](https://ood.hpc.rtu.lv/)) or press `Access resource` button in the self-service portal and look for the Clusters tab. Select `RUDENS Shell_access`.
 
+![Access resource](images/waldur_project_HPC_1.jpg)
 ![OOD](images/web-terminal.png)
 
 ### SSH access
@@ -127,7 +128,39 @@ Parallel MATLAB server virtually widens resources available for MATLAB (number o
 - [Download getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf)
 - [Download support package](./files/rtu.Desktop.zip)
 
-Only Matlab versions R2023b, R2024a are supported.
+**Only Matlab versions R2023b, R2024a are supported.**
+
+### Initialize cluster profile
+To submit jobs to the cluster, you need active allocation in the cluster and user account (login name and SSH key). Please refer to the previous sections, "Request HPC resource (allocation)" and "SSH access," in this guide. 
+
+After opening MATLAB, initialize the cluster profile by issuing the following commands. Addjust your username accordingly. 
+```
+>> configCluster
+Username on RUDENS (e.g. jdoe): usenname
+Complete.  Default cluster profile set to "Rudens R2024a".
+>> c = parcluster
+```
+For detailed instruction on setting up cluster profile follow to [getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf).
+
+### Set storage location
+For users who got their account through the Waldur, their cluster home directories reside on `/home/`. They must change the default location from `/home_beegfs/` to `/home/`. If you are not sure, you may get your home location by connecting to the cluster (SSH or Web-terminal) and issuing the command:
+```
+echo $HOME
+```
+You change it by setting `AdditionalProperties` during cluster profile initialization in Matlab.
+```
+>> configCluster
+Username on RUDENS (e.g. jdoe): username
+Complete.  Default cluster profile set to "Rudens R2024a".
+>> c = parcluster;
+>> c.AdditionalProperties.UseBeeGFS = false
+```
+On the first connection to the cluster, the directory will automatically be changed. It should look similar to:
+```
+>> c.AdditionalProperties.RemoteJobStorageLocation
+ans =
+    '/home/ciko/.matlab/generic_cluster_jobs/rudens/'
+```
 
 ## Additional guides
 
