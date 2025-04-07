@@ -147,7 +147,7 @@ For users who got their account through the Waldur, their cluster home directori
 ```
 echo $HOME
 ```
-You change it by setting `AdditionalProperties` during cluster profile initialization in Matlab.
+You change it by disabling `AdditionalProperties.UseBeeGFS` parameter during cluster profile initialization in Matlab.
 ```
 >> configCluster
 Username on RUDENS (e.g. jdoe): username
@@ -159,7 +159,7 @@ On the first connection to the cluster, the directory will automatically be chan
 ```
 >> c.AdditionalProperties.RemoteJobStorageLocation
 ans =
-    '/home/ciko/.matlab/generic_cluster_jobs/rudens/'
+    '/home/username/.matlab/generic_cluster_jobs/rudens/'
 ```
 
 ## Additional guides
