@@ -154,6 +154,7 @@ Username on RUDENS (e.g. jdoe): username
 Complete.  Default cluster profile set to "Rudens R2024a".
 >> c = parcluster;
 >> c.AdditionalProperties.UseBeeGFS = false
+>> c.saveProfile
 ```
 On the first connection to the cluster, the directory will automatically be changed. It should look similar to:
 ```
