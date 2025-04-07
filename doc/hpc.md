@@ -136,7 +136,7 @@ To submit jobs to the cluster, you need active allocation in the cluster and use
 After opening MATLAB, initialize the cluster profile by issuing the following commands. Addjust your username accordingly. 
 ```
 >> configCluster
-Username on RUDENS (e.g. jdoe): usenname
+Username on RUDENS (e.g. jdoe): username
 Complete.  Default cluster profile set to "Rudens R2024a".
 >> c = parcluster
 ```
