@@ -54,7 +54,7 @@ Open OnDemand (OOD) portal provides a web-based terminal in your browser. No SSH
 
 Go to our OOD ([https://ood.hpc.rtu.lv/](https://ood.hpc.rtu.lv/)) or press `Access resource` button in the self-service portal and look for the Clusters tab. Select `RUDENS Shell_access`.
 
-![Access resource](images/waldur_project_HPC_1.jpg)
+![Access resource](images/waldur_project_HPC_4.jpg)
 ![OOD](images/web-terminal.png)
 
 ### SSH access
