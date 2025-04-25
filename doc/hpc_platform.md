@@ -1,9 +1,8 @@
 # WALDUR: Access the HPC Platform
 
-The heart of the National Open HPC platform is **WALDUR**, a user-friendly self-service portal for requesting and managing access to computing resources.
+The heart of the [National Open HPC platform](https://nohap.hpc-net.lv) is **WALDUR**, a user-friendly self-service portal for requesting and managing access to computing resources.
 
 The built-in **Marketplace** offers a catalog of HPC services provided by Latvian academic institutions (currently RTU and LU), including:
-
 - Virtual desktops  
 - HPC clusters  
 - Jupyter notebook environments  
@@ -25,8 +24,7 @@ Access to HPC services is currently by **invitation only**. Users without an inv
 
 ## Supported Authentication Methods
 
-Authentication is handled via **GEANT MyAccessID**, which supports:
-
+Authentication is handled via GEANT MyAccessID, which supports:
 - **EduGAIN** – Log in using your university credentials  
 - **eIDAS** – Use your national electronic ID  
 
@@ -34,9 +32,7 @@ Authentication is handled via **GEANT MyAccessID**, which supports:
 
 ## Connect to the Self-Service Portal
 
-Visit the National Open HPC Platform:  
-🔗 [https://nohap.hpc-net.lv](https://nohap.hpc-net.lv)
-
+Visit the HPC Platform: [https://nohap.hpc-net.lv](https://nohap.hpc-net.lv)
 
 ```{include} ./include/waldur_access.md
 ```
