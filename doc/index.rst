@@ -12,6 +12,7 @@ This page provides instructions for using different tools and interfaces availab
 .. toctree::
    :maxdepth: 1
 
+   hpc_platform.md
    01_waldur.md
    hpc.md
    galaxy.md
