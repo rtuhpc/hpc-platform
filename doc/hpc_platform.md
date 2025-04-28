@@ -13,6 +13,10 @@ The built-in **Marketplace** offers a catalog of HPC services provided by Latvia
 
 ## Who Can Access the Platform?
 
+The platform is **Open**:
+- **External users** are welcome to use the platform, not just members of core institutions.
+- **Partner tools and services** could be integrated to extend marketplace offer.
+
 Access to HPC services is currently by **invitation only**. Users without an invitation can still log in and explore the portal, but with limited service availability.
 
 **How to get invited:**
