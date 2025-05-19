@@ -1,5 +1,5 @@
 # Galaxy portal
-Galaxy is an open platform for supporting data-intensive research with a focus on biomedical data (for example, genome, transcriptome, proteome) analyses. The analyses can be performed using graphical tools and hence could be easily used by non-bioinformaticians. The RTU Galaxy instance is connected to the HPC cluster and serves as a web-based GUI to submit analyses to the cluster.   
+Galaxy is an open platform for supporting data-intensive research focusing on biomedical, chemical, and general data analyses, including statistics, machine learning, and visualization tools. The analyses can be performed using a graphical environment and hence could be easily used by non-bioinformaticians. The RTU Galaxy instance is connected to the HPC cluster and serves as a web-based GUI to submit analyses to the cluster.
 
 The Galaxy interface is shown in the following figure. It is an example output of the sequencing quality control tool FastQC. 
 ![](./images/galaxy.png)
