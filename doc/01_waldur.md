@@ -12,7 +12,12 @@ Virtual desktops as part of HPC offering are available through Waldur resourse r
 
 ```{include} ./include/waldur_invite.md
 ```
-  
+
+## Requesting a Virtual destkop
+
+```{include} ./include/waldur_market_vd.md
+```
+
 ## Requesting a Virtual destkop (demonstration)
 
 The following videos are in Latvian.
