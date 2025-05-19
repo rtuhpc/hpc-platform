@@ -8,7 +8,7 @@
 
 3. chose **'Virtuala Darba Virsma'** offering
 
-![](images/waldur-market-vd3.png)
+![](/images/waldur-market-vd3.png)
 
 
 4. Then **[Deploy]**
