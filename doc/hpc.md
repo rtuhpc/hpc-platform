@@ -162,6 +162,12 @@ On the first connection to the cluster, the directory will automatically be chan
 ans =
     '/home/username/.matlab/generic_cluster_jobs/rudens/'
 ```
+### Request GPU resource from MATLAB
+```
+>> c.AdditionalProperties.GPUsPerNode = 1
+>> c.AdditionalProperties.Feature = 'l40s'
+>> c.saveProfile
+```
 
 ## Additional guides
 
