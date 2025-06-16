@@ -25,8 +25,8 @@ The HPC platform provides students, educators, researchers, and industry profess
 
 The central element of the HPC platform is a user-friendly interface for reserving and accessing computing resources. The interface provides access to supercomputer and virtualization infrastructure (virtual classrooms), as well as HPC-enabled thematic web portals for data analysis and visualization.
 
-.. image:: images/HPC_platform_v6_ENG.png
-  :width: 700
+.. image:: images/HPC_platform_v6_1_ENG.png
+  :width: 600
   :align: center
   :alt: Alternative text
   :target: https://nohap.hpc-net.lv/
