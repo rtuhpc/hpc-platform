@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jupyter Hub &mdash; HPC-NET 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="canonical" href="/hpc-platform/02_jupyter_hub.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=10f1778b"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Seqr portal" href="seqr.html" />
+    <link rel="prev" title="Galaxy portal" href="galaxy.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HPC-NET
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="hpc_platform.html">WALDUR: Access the HPC Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_waldur.html">Virtual desktops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hpc.html">HPC cluster (supercomputer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="galaxy.html">Galaxy portal</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Jupyter Hub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#access">Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#login-to-jupyter-hub">Login to Jupyter Hub</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#select-kernel">Select kernel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-r-libraries-locally">Install R libraries locally</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#register-a-group-of-students">Register a group of students</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#impersonate-users-to-view-their-files">Impersonate users to view their files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-log-in-to-the-keycloak-admin-console">Step 1: Log in to the Keycloak Admin Console</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-navigate-to-the-users-section">Step 2: Navigate to the Users Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-search-for-the-user">Step 3: Search for the User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-impersonate-the-user">Step 4: Impersonate the User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-5-perform-the-necessary-actions">Step 5: Perform the Necessary Actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-6-end-the-impersonation-session">Step 6: End the Impersonation Session</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-7-return-to-the-admin-console">Step 7: Return to the Admin Console</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="seqr.html">Seqr portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lti.html">Integration with MOODLE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning_resources.html">Additional Guides and Learning Resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HPC-NET</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Jupyter Hub</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/02_jupyter_hub.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="jupyter-hub">
+<h1>Jupyter Hub<a class="headerlink" href="#jupyter-hub" title="Link to this heading"></a></h1>
+<p>JupyterHub is an open-source graphical programming environment accessible through a web interface. Currently, programming in Python and R languages is supported on the RTU Jupyter environment. The prepared tasks can be run on a single 32 vCPU and 64GB RAM virtual machine, but in the future, it is planned to create the possibility of running tasks on GPUs and the whole cluster. <a class="reference external" href="https://hpc.rtu.lv/jupyterhub/">More information https://hpc.rtu.lv/jupyterhub/</a>.</p>
+<p><img alt="" src="_images/jupyter_interface.png" /></p>
+<section id="access">
+<h2>Access<a class="headerlink" href="#access" title="Link to this heading"></a></h2>
+<p><strong>RTU HPC Jupyter Hub portal:</strong> <a class="reference external" href="https://jhub.hpc.rtu.lv/"><strong>https://jhub.hpc.rtu.lv/</strong></a></p>
+<p>Access to the Jupyther Hub should be requested through the RTU HPC center <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSdsEhMkfAGtDyS6z6yYo0mDf1PQRxC06fxPI2D7YVzvDrwa-g/viewform?c=0&amp;amp;w=1">registration form</a>.<br />
+Only the university employees (researchers, instructors, administration) may request access.
+Students are invited by their course instructors (see the procedure <a class="reference external" href="https://hpc-platforma.rtu.lv/02_jupyter_hub.html#register-group-of-students">in the next section</a>).</p>
+<section id="login-to-jupyter-hub">
+<h3>Login to Jupyter Hub<a class="headerlink" href="#login-to-jupyter-hub" title="Link to this heading"></a></h3>
+<p>To login in jupyter first go to <a class="reference external" href="https://jhub.hpc.rtu.lv/"><strong>https://jhub.hpc.rtu.lv/</strong></a></p>
+<p>Then enter your username and password</p>
+<p>If this window appears, enter a new password for your user.
+<img alt="" src="_images/jupyter_password.png" /></p>
+</section>
+</section>
+<section id="select-kernel">
+<h2>Select kernel<a class="headerlink" href="#select-kernel" title="Link to this heading"></a></h2>
+<p>In jupyterhub you can use both python and R languages. To use the desired one you need to select the proper kernel when opening a new notebook file. In the image below you can see the choices of either the Python or R kernels.
+<img alt="" src="_images/jupyter_kernel.png" /></p>
+</section>
+<section id="install-r-libraries-locally">
+<h2>Install R libraries locally<a class="headerlink" href="#install-r-libraries-locally" title="Link to this heading"></a></h2>
+<p>Create a Local Directory for Your R Packages:</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">dir.create</span><span class="p">(</span><span class="s">&quot;R_packages&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Set the Library Path:</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">.libPaths</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="nf">.libPaths</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;R_packages&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Install the Package:</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;your_package_name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">lib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;R_packages&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Replace “your_package_name” with the name of the package you want to install.</p>
+</div></blockquote>
+<p>Load the Package:</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">your_package_name</span><span class="p">,</span><span class="w"> </span><span class="n">lib.loc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;R_packages&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Replace your_package_name with the actual name of the package.</p>
+</div></blockquote>
+<p>If package installation fails, use this command to see what causes the error</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;your_package_name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">lib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;R_packages&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">verbose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">keep_output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="register-a-group-of-students">
+<h2>Register a group of students<a class="headerlink" href="#register-a-group-of-students" title="Link to this heading"></a></h2>
+<p>You must have an instructor account to register and invite group of students.</p>
+<p>Follow the address: <a class="reference external" href="https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console">https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console</a>.</p>
+<p>Enter your username and password.
+<img alt="" src="_images/jupyter_1.png" /></p>
+<p>On the left side click on the button “Users” and then on the right side on “Add user”.
+<img alt="" src="_images/jupyter_2.png" /></p>
+<p>Enther the student’s username in the field “Username” [<strong>it is advisable to not use an email address as a student’s username, thiss may cause errors</strong>], verify that the email verified box is set to <strong>ON</strong> and in the box “Select existing group” enter the name of the desired classroom to which you wish to add the student.
+<img alt="" src="_images/jupyter_3.png" />
+<img alt="" src="_images/jupyter_3_1.png" /></p>
+<p>Lastly, click on “Save” and scroll to the top of the page.
+<img alt="" src="_images/jupyter_4.png" /></p>
+<p>Click on “Credentials”. 
+<img alt="" src="_images/jupyter_5.png" /></p>
+<p>Enther the password that the student will use to log in in the fields “Password” and “Password Confirmation” [<strong>advisable to use the same password for all students</strong>]and click on “Set password”
+<img alt="" src="_images/jupyter_6.png" /></p>
+<p>That is it! A new student has been registered to your classroom. <strong>The student does not receive his login details automatically</strong>, you need to give the student his username and password manually.</p>
+<p>Login to jupyter: <a class="reference external" href="https://jhub.hpc.rtu.lv">https://jhub.hpc.rtu.lv</a></p>
+</section>
+<section id="impersonate-users-to-view-their-files">
+<h2>Impersonate users to view their files<a class="headerlink" href="#impersonate-users-to-view-their-files" title="Link to this heading"></a></h2>
+<p>If you need to view a student’s files you can follow the steps below.</p>
+<section id="step-1-log-in-to-the-keycloak-admin-console">
+<h3>Step 1: Log in to the Keycloak Admin Console<a class="headerlink" href="#step-1-log-in-to-the-keycloak-admin-console" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Open your web browser and navigate to the Keycloak Admin Console. This is typically accessible via <code class="docutils literal notranslate"><span class="pre">[http://&lt;keycloak-server&gt;/auth/admin/](https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console)</span></code>.</p></li>
+<li><p>Log in using your credentials.</p></li>
+</ol>
+</section>
+<section id="step-2-navigate-to-the-users-section">
+<h3>Step 2: Navigate to the Users Section<a class="headerlink" href="#step-2-navigate-to-the-users-section" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>In the left-hand menu, click on <strong>Users</strong>. This will take you to the user management page, where you can view and manage all users within the selected realm.</p></li>
+</ol>
+</section>
+<section id="step-3-search-for-the-user">
+<h3>Step 3: Search for the User<a class="headerlink" href="#step-3-search-for-the-user" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>In the Users section, you can search for the user you want to impersonate by using their username, email, or other attributes.</p></li>
+<li><p>Enter the search criteria in the search box and click on <strong>Search</strong> or click <strong>All users</strong>.</p></li>
+</ol>
+</section>
+<section id="step-4-impersonate-the-user">
+<h3>Step 4: Impersonate the User<a class="headerlink" href="#step-4-impersonate-the-user" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Once you find the user, you will see a button labeled <strong>Impersonate</strong> at the right side of the user’s row.</p></li>
+<li><p>Click on the <strong>Impersonate</strong> button.</p>
+<ul class="simple">
+<li><p><strong>Note:</strong> If you do not see the Impersonate button, you may not have the necessary permissions. You will need to contact hpc&#64;rtu.lv to ensure you have the <strong>impersonation</strong> role or sufficient privileges.</p></li>
+</ul>
+</li>
+<li><p>After clicking <strong>Impersonate</strong>, a new tab or window will open, and you will be logged in as the selected user.</p></li>
+</ol>
+</section>
+<section id="step-5-perform-the-necessary-actions">
+<h3>Step 5: Perform the Necessary Actions<a class="headerlink" href="#step-5-perform-the-necessary-actions" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>In the impersonated session, you can open a new tab and navigate to jhub.hpc.rtu.lv as the user, access all files, and perform any actions as neede.</p></li>
+</ol>
+</section>
+<section id="step-6-end-the-impersonation-session">
+<h3>Step 6: End the Impersonation Session<a class="headerlink" href="#step-6-end-the-impersonation-session" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Once you have finished performing the necessary tasks, you can end the impersonation session.</p></li>
+<li><p>To do this, simply log out of the user session in the keycloak tab.</p></li>
+</ol>
+</section>
+<section id="step-7-return-to-the-admin-console">
+<h3>Step 7: Return to the Admin Console<a class="headerlink" href="#step-7-return-to-the-admin-console" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Enter <code class="docutils literal notranslate"><span class="pre">[http://&lt;keycloak-server&gt;/auth/admin/](https://jhub-auth.hpc.rtu.lv/auth/admin/jupyter/console)</span></code> to get to your Keycloak Admin Console and enter your login information again.</p></li>
+<li><p>Once logged in you can continue from Step 2.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="galaxy.html" class="btn btn-neutral float-left" title="Galaxy portal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="seqr.html" class="btn btn-neutral float-right" title="Seqr portal" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, RTU HPC center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
