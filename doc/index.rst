@@ -50,6 +50,6 @@ Each of the tools of the user interface layer is explained in more detail in sub
 
 Although technically part of the hardware stack, virtualization in the context of the HPC platform acts as a gateway by providing pre-configured virtual machines. These VMs simplify access by offering familiar software environments (e.g., MATLAB) that are pre-integrated with the supercomputer.
 
-*HPC hardware infrastructure**
+**HPC hardware infrastructure**
 
 The hardware layer of the platform consists of HPC clusters (supercomputers) hosted by Latvian academic institutions, providing the core computing and storage resources of the platform.
