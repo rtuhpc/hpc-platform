@@ -52,10 +52,11 @@ Users access the HPC cluster RUDENS remotely using secure shell (SSH) protocol o
 ### Web-terminal access
 Open OnDemand (OOD) portal provides a web-based terminal in your browser. No SSH password or keys are required. It will use the same identity you provided when connected to the Waldur self-service portal. A simple file browser with upload/download functionality is available in OOD.
 
-Go to our OOD ([https://ood.hpc.rtu.lv/](https://ood.hpc.rtu.lv/)) or press `Access resource` button in the self-service portal and look for the Clusters tab. Select `RUDENS Shell_access`.
+Go to our OOD ([https://ood.hpc.rtu.lv/](https://ood.hpc.rtu.lv/)) or press `Access resource` button in the self-service portal and look for the Clusters tab. Select `RUDENS Shell_access`. Another window with a web-based terminal will open, where you can interact with the supercomputer via a command-line interface.
 
 ![Access resource](images/waldur_project_HPC_4.jpg)
 ![OOD](images/web-terminal.png)
+![terminal](images/web_terminal.png)
 
 ### SSH access
 
