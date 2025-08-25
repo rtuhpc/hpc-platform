@@ -21,7 +21,7 @@ This page provides instructions for using different tools and interfaces availab
    lti.md
    learning_resources.md
 
-The HPC platform provides students, educators, researchers, and industry professionals with a single point of access to virtual computing infrastructure to support learning and development of advanced digital skills.
+The HPC platform provides students, educators, researchers, and industry professionals with a single point of access to virtual computing infrastructure to support learning and development of advanced digital skills in Latvia.
 
 .. image:: images/HPC_platform_v6_1_ENG.png
   :width: 600
@@ -29,6 +29,7 @@ The HPC platform provides students, educators, researchers, and industry profess
   :alt: Alternative text
   :target: https://nohap.hpc-net.lv/
   
+
 
 Functional layers of the HPC platform:
 
