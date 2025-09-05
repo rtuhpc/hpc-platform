@@ -43,11 +43,13 @@ We aim to implement single sign-on for all services provided by the platform. Fe
 
 **User interface**
 
-The user interface layer provides a set of tools like Open OnDemand, HPC-ready virtual desktops for user-friendly access to HPC, as well as HPC-enabled thematic web portals (Galaxy, Jupyter Hub, Seqr, and others) for data analysis and visualization. Most of the tools are web-based, meaning that the interaction with the supercomputer is possible without leaving the web browser; nevertheless, traditional access through SSH is still available.
-
 WALDUR plays a central role in this layer: a self-service portal for requesting and managing access to computing resources. The built-in Marketplace offers a catalog of HPC services provided by Latvian academic institutions.
 
-Each of the tools of the user interface layer is explained in more detail in subsections of this documentation page.
+The user interface layer provides a set of tools like Open OnDemand, HPC-ready virtual desktops for user-friendly access to HPC, as well as HPC-enabled thematic web portals (Galaxy, Jupyter Hub, Seqr, and others) for data analysis and visualization. Most of the tools are web-based, meaning that the interaction with the supercomputer is possible without leaving the web browser; nevertheless, traditional access through SSH is still available.
+
+Integration with the e-learning environment. The project team has developed an HPC command-line tool for the Moodle e-learning environment, using the LTI (Learning Tools Interoperability) protocol.
+
+Each of the elements of the user interface layer is explained in more detail in subsections of this documentation page.
 
 **Virtualization**
 
