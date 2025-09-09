@@ -129,12 +129,12 @@ Parallel MATLAB server virtually widens resources available for MATLAB (number o
 - [Download getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf)
 - [Download support package](./files/rtu.Desktop.zip)
 
-**Only Matlab versions R2023b, R2024a are supported.**
+**Only MATLAB versions R2023b, R2024a, R2024b, and R2025a are supported.**
 
 ### Initialize cluster profile
 To submit jobs to the cluster, you need active allocation in the cluster and user account (login name and SSH key). Please refer to the previous sections, "Request HPC resource (allocation)" and "SSH access," in this guide. 
 
-After opening MATLAB, initialize the cluster profile by issuing the following commands. Addjust your username accordingly. 
+After opening , initialize the cluster profile by issuing the following commands. Addjust your username accordingly. 
 ```
 >> configCluster
 Username on RUDENS (e.g. jdoe): username
