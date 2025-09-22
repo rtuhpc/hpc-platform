@@ -129,7 +129,7 @@ Parallel MATLAB server virtually widens resources available for MATLAB (number o
 - [Download getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf)
 - [Download support package](./files/rtu.Desktop.zip)
 
-Download the Support packate (ZIP file) and start MATLAB. The ZIP file should be unzipped in the location returned by
+Download the Support package (ZIP file) and start MATLAB. The ZIP file should be unzipped in the location returned by
 calling
 ```
 >> userpath
