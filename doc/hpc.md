@@ -129,6 +129,12 @@ Parallel MATLAB server virtually widens resources available for MATLAB (number o
 - [Download getting started guide](./files/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf)
 - [Download support package](./files/rtu.Desktop.zip)
 
+Download the Support packate (ZIP file) and start MATLAB. The ZIP file should be unzipped in the location returned by
+calling
+```
+>> userpath
+```
+
 **Only MATLAB versions R2023b, R2024a, R2024b, and R2025a are supported.**
 
 ### Initialize cluster profile
