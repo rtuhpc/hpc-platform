@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To deploy pre-configured virtual machine with remote desktop access: &mdash; HPC-NET 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="canonical" href="/hpc-platform/include/waldur_market_vd.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=10f1778b"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            HPC-NET
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../hpc_platform.html">WALDUR: Access the HPC Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_waldur.html">Virtual desktops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hpc.html">HPC cluster (supercomputer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../galaxy.html">Galaxy portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_jupyter_hub.html">Jupyter Hub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../seqr.html">Seqr portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lti.html">Integration with MOODLE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning_resources.html">Additional Guides and Learning Resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HPC-NET</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">To deploy pre-configured virtual machine with remote desktop access:</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/include/waldur_market_vd.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="to-deploy-pre-configured-virtual-machine-with-remote-desktop-access">
+<h1>To deploy pre-configured virtual machine with remote desktop access:<a class="headerlink" href="#to-deploy-pre-configured-virtual-machine-with-remote-desktop-access" title="Link to this heading"></a></h1>
+<ol class="arabic simple">
+<li><p>go to Marketplace</p></li>
+<li><p>and select <strong>Virtual Desktops</strong> section</p></li>
+</ol>
+<p><img alt="" src="../_images/waldur-market-vd1-2.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>chose <strong>‘Virtuala Darba Virsma’</strong> offering</p></li>
+</ol>
+<p><img alt="" src="../_images/waldur-market-vd3.png" /></p>
+<ol class="arabic simple" start="4">
+<li><p>Then <strong>[Deploy]</strong></p></li>
+</ol>
+<p><img alt="" src="../_images/waldur-market-vd4.png" /></p>
+<ol class="arabic simple" start="5">
+<li><p>specify <strong>Organisation</strong> and <strong>Project</strong> under which you are intended to use chosen resource</p></li>
+<li><p>inside image dropdown list you will see multiple options of images:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>“UbuntuDesktop_raw”</em> will be default clean Ubuntu 22 image with Remote Desktop access</p></li>
+<li><p>number specified at the end of image file name *<em>_60_raw</em> or *<em>_40G_raw</em> sugests minimal Volume size required for Image</p></li>
+</ul>
+</div></blockquote>
+<p><img alt="" src="../_images/waldur-market-vd5-6.png" /></p>
+<ol class="arabic" start="7">
+<li><p>Select required flavor for vCPUs and RAM and disk size of a Volume</p></li>
+<li><p>Create custom name of a resource.</p>
+<blockquote>
+<div><p>We suggest to use name or initials, because it would be easyer to locate if in case of troubleshooting procedure if needed. Or push <strong>[Suggest name]</strong> button</p>
+</div></blockquote>
+</li>
+<li><p>Start creation process of a resource</p></li>
+</ol>
+<p><img alt="" src="../_images/waldur-market-vd7-9.png" /></p>
+<ol class="arabic simple" start="10">
+<li><p>This is deployment sequence status bar, to update it…</p></li>
+<li><p>…press <strong>Refresh</strong></p></li>
+</ol>
+<p><img alt="" src="../_images/waldur-market-vd10-11.png" /></p>
+<ol class="arabic simple" start="12">
+<li><p>After deployment is successfull, you will be able to access your resource by clicking on Access resource or going directly to <a class="reference internal" href="#desktop.hpc-net.lv"><span class="xref myst">Access URL</span></a></p></li>
+</ol>
+<p><img alt="" src="../_images/waldur-market-vd12.png" /></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, RTU HPC center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

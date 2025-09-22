@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HPC cluster (supercomputer) &mdash; HPC-NET 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="canonical" href="/hpc-platform/hpc.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=10f1778b"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Galaxy portal" href="galaxy.html" />
+    <link rel="prev" title="Virtual desktops" href="01_waldur.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HPC-NET
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="hpc_platform.html">WALDUR: Access the HPC Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_waldur.html">Virtual desktops</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">HPC cluster (supercomputer)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#apply-for-hpc">Apply for HPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-an-account-on-the-hpc-cluster-rudens-after-approval">Get an account on the HPC cluster RUDENS (after approval)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#connect-to-waldur-self-service-portal">Connect to Waldur self-service portal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#invite-participants">Invite participants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#request-hpc-resource-allocation">Request HPC resource (allocation)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-to-the-hpc-cluster">Connect to the HPC cluster</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#web-terminal-access">Web-terminal access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ssh-access">SSH access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#generate-a-ssh-key">1. Generate a SSH key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#upload-the-public-key">2. Upload the public key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#use-the-key">3. Use the key</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#start-using-the-hpc-cluster">Start using the HPC cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hpc-demo-cases">HPC demo-cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parallel-matlab">Parallel MATLAB</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#initialize-cluster-profile">Initialize cluster profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-storage-location">Set storage location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#request-gpu-resource-from-matlab">Request GPU resource from MATLAB</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-guides">Additional guides</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="galaxy.html">Galaxy portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_jupyter_hub.html">Jupyter Hub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seqr.html">Seqr portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lti.html">Integration with MOODLE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning_resources.html">Additional Guides and Learning Resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HPC-NET</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">HPC cluster (supercomputer)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/hpc.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hpc-cluster-supercomputer">
+<h1>HPC cluster (supercomputer)<a class="headerlink" href="#hpc-cluster-supercomputer" title="Link to this heading"></a></h1>
+<p>A High-Performance Computing (HPC) cluster consists of several compute nodes interconnected by a fast computer network (e.g., InfiniBand). Compute nodes are individual servers within the cluster that perform computational tasks. HPC clusters can be used for parallel computing, executing a complicated task simultaneously on several compute nodes, and distributed computing, performing smaller independent tasks on separate nodes or processor cores. HPC cluster allows solving complex problems faster and has the ability to tackle larger datasets. Multiple users can work concurrently, each with their own computing tasks and workflows, and within their working directory to store data.</p>
+<section id="apply-for-hpc">
+<h2>Apply for HPC<a class="headerlink" href="#apply-for-hpc" title="Link to this heading"></a></h2>
+<p>To receive access to the HPC cluster RUDENS</p>
+<ul class="simple">
+<li><p>research groups, course instructors, and individual students working on thesis/research must fill in the <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSemd1JlJB2lyW0Fal6OA3MM7cmxpqh0GQt145lrzmqqIFQIeA/viewform">APPLICATION FORM</a>.  After receiving the application, the HPC Centre will review it and contact you on the following steps.</p></li>
+<li><p>students involved in the study course and need HPC as part of their course curriculum should receive an invitation from their course instructor.</p></li>
+</ul>
+</section>
+<section id="get-an-account-on-the-hpc-cluster-rudens-after-approval">
+<h2>Get an account on the HPC cluster RUDENS (after approval)<a class="headerlink" href="#get-an-account-on-the-hpc-cluster-rudens-after-approval" title="Link to this heading"></a></h2>
+<p>After the application is approved, you will receive an email inviting you to participate in a project in the Waldur self-service portal. You may also receive an email even if you didn’t apply for HPC yourself, but your project leader or course instructor has invited you. Note that the invitation will expire in 2 weeks.</p>
+<p>In the portal, you will acquire an account on the HPC cluster.</p>
+<section id="connect-to-waldur-self-service-portal">
+<h3>Connect to Waldur self-service portal<a class="headerlink" href="#connect-to-waldur-self-service-portal" title="Link to this heading"></a></h3>
+<p>Follow the link to the National Open HPC Platform: <a class="reference external" href="https://nohap.hpc-net.lv">https://nohap.hpc-net.lv</a></p>
+<p>Please start by clicking on [Sign in with RTU HPC]
+<img alt="" src="_images/waldur-login.png" /></p>
+<p>By selecting the MyAccessID method, you should be able to authenticate with your university login details or eEIDAS (eParaksts for Latvian citizens).
+<img alt="" src="_images/waldur-keycloak1.png" /></p>
+<p>In MyAccessID window under “Login with” search for your university’s identity provider.<br />
+<img alt="" src="_images/waldur-myaccessid0.png" /></p>
+<p>In case of the Riga Technical University, select identity provider “Riga Technical University (Office 365)”.
+<img alt="" src="_images/waldur-myaccessid1.png" /></p>
+<p>Similar to University of Latvia<br />
+<img alt="" src="_images/waldur-myaccessid1-2.png" /></p>
+<p>and Riga Stradiņš University<br />
+<img alt="" src="_images/waldur-myaccessid1-1.png" /></p>
+<p>You will be redirected to your organizations identity provider authorization portal, in this case RTU ORTUS.  Please follow all authentication steps begining with your login:
+<img alt="" src="_images/waldur-keycloak2.png" /></p>
+<p>Later confirm authentication by scrolling down MyaccessID warning message:
+<img alt="" src="_images/waldur-keycloak2.png" /></p>
+<p>After successful authentication you will be asked to confirm[ACCEPT] you name and email in Waldur system profile:
+<img alt="" src="_images/waldur-project.png" /></p>
+</section>
+<section id="invite-participants">
+<h3>Invite participants<a class="headerlink" href="#invite-participants" title="Link to this heading"></a></h3>
+<p>In order to invite participants to the Project/Study course you must have at least Manager role in this Project.</p>
+<p>Follow these steps to get to invitation form:
+<img alt="" src="_images/waldur-invite0.png" /></p>
+<p>Then fill invitation form with members’ email address[4.] and propper role[5.] in project - “member” in this case.<br />
+With + button you can add additional participants to this invitation session.<br />
+<img alt="" src="_images/waldur-invite1.png" /></p>
+<p>Last activity is to add custom message to invitation email, then submit[9.] to finish invitation procedure.
+<img alt="" src="_images/waldur-invite2.png" /></p>
+</section>
+<section id="request-hpc-resource-allocation">
+<h3>Request HPC resource (allocation)<a class="headerlink" href="#request-hpc-resource-allocation" title="Link to this heading"></a></h3>
+<p>You must belong to a project/study course to perform this step.</p>
+<p>First, check whether your project already has active HPC allocation. Usually, <strong>there should be only one active allocation per project</strong> that all project members can use. Go to <code class="docutils literal notranslate"><span class="pre">Project</span></code> view and check the <code class="docutils literal notranslate"><span class="pre">Resources</span></code> section for the existing “RTU HPC (RUDENS)” resource (alllocation).</p>
+<p><img alt="HPC resource" src="_images/waldur_project_HPC_1.jpg" /></p>
+<p>Allocation is a certain amount of computing resources (CPU hours, GPU hours, memory) that is allocated for project use, and it is expressed in its price in EUR. Initial credit (EUR) is deposited when HPC service is obtained through the Marketplace. If allocated credit is spent, you may request a new allocation or extend the existing one by depositing additional funds. Note that it is virtual credit that sets resource usage limits; it is not the front payment. Real money is charged only according to actual use and according to an agreement with the HPC center.</p>
+<p>To start using the HPC cluster, press on the allocated resource name (in the example, “HPC cluster allocation”). In the resource view, you will get additional information about your username and access details.</p>
+<p><img alt="deploy HPC" src="_images/waldur_project_HPC_4.jpg" /></p>
+<p><strong>Request new HPC resource</strong>. If your project doesn’t have active HPC allocation, you can request it through the marketplace. Press the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">resource</span></code> button and look for RUDENS (RTU HPC) offering.</p>
+<p><img alt="marketplace HPC" src="_images/waldur_project_HPC_2.jpg" /></p>
+<p>By pressing <code class="docutils literal notranslate"><span class="pre">Deploy,</span></code> the form will open where you should specify your deposit (in EURs) and an arbitrary name for the resource. Then press <code class="docutils literal notranslate"><span class="pre">Create</span></code>, and the request will be submitted to the RTU HPC center for review and approval.</p>
+<p><img alt="deploy HPC" src="_images/waldur_project_HPC_3.jpg" /></p>
+</section>
+</section>
+<section id="connect-to-the-hpc-cluster">
+<h2>Connect to the HPC cluster<a class="headerlink" href="#connect-to-the-hpc-cluster" title="Link to this heading"></a></h2>
+<p>Users access the HPC cluster RUDENS remotely using secure shell (SSH) protocol or HTTPS web-terminal. Work with the cluster occurs via a dedicated server (login node) with the Linux command-line interface and job management tools. The next figure visualize a user connection to the cluster.</p>
+<p><img alt="scheme" src="_images/hpc_cluster_scheme.png" /></p>
+<section id="web-terminal-access">
+<h3>Web-terminal access<a class="headerlink" href="#web-terminal-access" title="Link to this heading"></a></h3>
+<p>Open OnDemand (OOD) portal provides a web-based terminal in your browser. No SSH password or keys are required. It will use the same identity you provided when connected to the Waldur self-service portal. A simple file browser with upload/download functionality is available in OOD.</p>
+<p>Go to our OOD (<a class="reference external" href="https://ood.hpc.rtu.lv/">https://ood.hpc.rtu.lv/</a>) or press <code class="docutils literal notranslate"><span class="pre">Access</span> <span class="pre">resource</span></code> button in the self-service portal and look for the Clusters tab. Select <code class="docutils literal notranslate"><span class="pre">RUDENS</span> <span class="pre">Shell_access</span></code>. Another window with a web-based terminal will open, where you can interact with the supercomputer via a command-line interface.</p>
+<p><img alt="Access resource" src="_images/waldur_project_HPC_4.jpg" />
+<img alt="OOD" src="_images/web-terminal.png" />
+<img alt="terminal" src="_images/web_terminal.png" /></p>
+</section>
+<section id="ssh-access">
+<h3>SSH access<a class="headerlink" href="#ssh-access" title="Link to this heading"></a></h3>
+<p>You need an SSH key to connect to the RUDENS login node. Passwords are not supported for the accounts requested through the self-service portal. Follow the described steps to prepere a SSH key.</p>
+<section id="generate-a-ssh-key">
+<h4>1. Generate a SSH key<a class="headerlink" href="#generate-a-ssh-key" title="Link to this heading"></a></h4>
+<p>If you don’t have an SSH key, you can generate one using instructions in <a class="reference external" href="https://hpc-guide.rtu.lv/appendix.html#generating-keys-on-windows-using-mobaxterm">our HPC user-guide</a> (for Windows). If you use Linux or MacOS, open the Terminal app (command line) and simply execute the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span>
+</pre></div>
+</div>
+<p>Two files will be generated: private key (default name id_rsa) and public key (id_rsa.pub). Keep the private key secret. For a more detailed explanation of SSH keys, follow the to <a class="reference external" href="https://www.ssh.com/academy/ssh/keygen">SSH Academy</a>.</p>
+</section>
+<section id="upload-the-public-key">
+<h4>2. Upload the public key<a class="headerlink" href="#upload-the-public-key" title="Link to this heading"></a></h4>
+<p>Before connection, your SSH public key must be uploaded to the Waldur self-service portal. By doing so, your public key will be available for the HPC cluster to recognize you on the SSH connection.</p>
+<ul class="simple">
+<li><p>Go to the top right of the screen and click on your name to open the account menu.</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Credentials</span></code> link to open a sub-menu where you can select <code class="docutils literal notranslate"><span class="pre">SSH</span> <span class="pre">keys</span></code>.
+<img alt="credentials" src="_images/hpc_credentials.png" /></p></li>
+<li><p>Copy contents of your public SSH key.
+<img alt="public key" src="_images/hpc_paste_rsa-key.png" /></p></li>
+<li><p><strong>Wait at least 5 minutes</strong> while the key is synchronized to the cluster.</p></li>
+</ul>
+</section>
+<section id="use-the-key">
+<h4>3. Use the key<a class="headerlink" href="#use-the-key" title="Link to this heading"></a></h4>
+<p><strong>On Linux/macOS systems</strong>, if the generated keys are stored in the default directory ~/.ssh/, connect to a cluster by using the <code class="docutils literal notranslate"><span class="pre">Access</span> <span class="pre">resource</span></code> button in the self-service portal or manually open the command line (terminal) and run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="n">username</span><span class="nd">@ui</span><span class="o">-</span><span class="mf">2.</span><span class="n">hpc</span><span class="o">.</span><span class="n">rtu</span><span class="o">.</span><span class="n">lv</span>
+</pre></div>
+</div>
+<p>If you stored the keys in other location then default (~/.ssh/), additonally specify the path to the private key:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">id_rsa</span> <span class="n">username</span><span class="nd">@ui</span><span class="o">-</span><span class="mf">2.</span><span class="n">hpc</span><span class="o">.</span><span class="n">rtu</span><span class="o">.</span><span class="n">lv</span>
+</pre></div>
+</div>
+<p>Change ‘username’ to your actual login name, which you can see in the resource view in Waldur.</p>
+<p><strong>For Windows SSH clients</strong>, such as Putty or MobaXterm, the path to private key file must be specified in the connection settings.</p>
+<ul class="simple">
+<li><p>For Putty: click <code class="docutils literal notranslate"><span class="pre">Connection</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">SSH</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">Auth</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">Browse</span></code> for the private key</p></li>
+<li><p>For MoabXterm: click <code class="docutils literal notranslate"><span class="pre">Settings</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">SSH</span></code> tab =&gt; in the agent section click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> sign to import your private key</p></li>
+</ul>
+<p>In the Session sectoin specify your username and the login node Host name as shown in the example. We recomend saving the session for future use.
+<img alt="Putty" src="_images/putty_window.jpg" />
+Change ‘username’ to your actual login name, which you can see in the resource view in Waldur.</p>
+<p><strong>Note: if the login node requests the password during connection, your SSH key is not recognized or configured correctly.</strong></p>
+</section>
+</section>
+</section>
+<section id="start-using-the-hpc-cluster">
+<h2>Start using the HPC cluster<a class="headerlink" href="#start-using-the-hpc-cluster" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://hpc-guide.rtu.lv">Follow the link to the user guide on using the HPC cluster RUDENS.</a></p>
+</section>
+<section id="hpc-demo-cases">
+<h2>HPC demo-cases<a class="headerlink" href="#hpc-demo-cases" title="Link to this heading"></a></h2>
+<p>Reusable examples (with codes) of HPC applications in various scientific domains: <a class="reference external" href="https://gitlab.com/eurocc-latvia">https://gitlab.com/eurocc-latvia</a>.</p>
+<ul class="simple">
+<li><p>Assessment of Wind Loads Using HPC</p></li>
+<li><p>Building Management System AI Model</p></li>
+<li><p>Crystal Growth</p></li>
+<li><p>Dielectric Constant Measurement Uncertainty Estimation using HPC</p></li>
+<li><p>Estimation of RF to DC Converter Power Conversion Efficiency Sensitivity to Component Parameters</p></li>
+<li><p>HPC Array Job Example</p></li>
+<li><p>Metagenomic analysis</p></li>
+<li><p>Metal Casting HPC Model</p></li>
+<li><p>MHD Mixing HPC Model</p></li>
+<li><p>Microchannel Flow in a Heated Plate</p></li>
+<li><p>Oceanographic HPDA</p></li>
+<li><p>Room Thermal Comfort and Epidemiological Safety</p></li>
+<li><p>Seasonal Weather Forecast HPDA</p></li>
+</ul>
+<p>Demonstrations are prepared by EuroCC National HPC Competence Centre of Latvia.</p>
+</section>
+<section id="parallel-matlab">
+<h2>Parallel MATLAB<a class="headerlink" href="#parallel-matlab" title="Link to this heading"></a></h2>
+<p>Parallel MATLAB server virtually widens resources available for MATLAB (number of CPU’s, memory, location) by directing tasks to the HPC cluster.</p>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="_downloads/38b4c6c54f8f6c828c875965d7b5f878/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf"><span class="xref download myst">Download getting started guide</span></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/ac2406fcbe395d3799266c87881d7aa7/rtu.Desktop.zip"><span class="xref download myst">Download support package</span></a></p></li>
+</ul>
+<p>Download the Support package (ZIP file) and start MATLAB. The ZIP file should be unzipped in the location returned by
+calling</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span> <span class="n">userpath</span>
+</pre></div>
+</div>
+<p><strong>Only MATLAB versions R2023b, R2024a, R2024b, and R2025a are supported.</strong></p>
+<section id="initialize-cluster-profile">
+<h3>Initialize cluster profile<a class="headerlink" href="#initialize-cluster-profile" title="Link to this heading"></a></h3>
+<p>To submit jobs to the cluster, you need active allocation in the cluster and user account (login name and SSH key). Please refer to the previous sections, “Request HPC resource (allocation)” and “SSH access,” in this guide.</p>
+<p>After opening , initialize the cluster profile by issuing the following commands. Addjust your username accordingly.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span> <span class="n">configCluster</span>
+<span class="n">Username</span> <span class="n">on</span> <span class="n">RUDENS</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">jdoe</span><span class="p">):</span> <span class="n">username</span>
+<span class="n">Complete</span><span class="o">.</span>  <span class="n">Default</span> <span class="n">cluster</span> <span class="n">profile</span> <span class="nb">set</span> <span class="n">to</span> <span class="s2">&quot;Rudens R2024a&quot;</span><span class="o">.</span>
+<span class="o">&gt;&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">parcluster</span>
+</pre></div>
+</div>
+<p>For detailed instruction on setting up cluster profile follow to <a class="reference download internal" download="" href="_downloads/38b4c6c54f8f6c828c875965d7b5f878/Getting_Started_With_Serial_And_Parallel_MATLAB.pdf"><span class="xref download myst">getting started guide</span></a>.</p>
+</section>
+<section id="set-storage-location">
+<h3>Set storage location<a class="headerlink" href="#set-storage-location" title="Link to this heading"></a></h3>
+<p>For users who got their account through the Waldur, their cluster home directories reside on <code class="docutils literal notranslate"><span class="pre">/home/</span></code>. They must change the default location from <code class="docutils literal notranslate"><span class="pre">/home_beegfs/</span></code> to <code class="docutils literal notranslate"><span class="pre">/home/</span></code> in cluster profile configuration. If you are not sure, you may get your home location by connecting to the cluster (SSH or Web-terminal) and issuing the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>echo $HOME
+</pre></div>
+</div>
+<p>You change it by disabling <code class="docutils literal notranslate"><span class="pre">AdditionalProperties.UseBeeGFS</span></code> parameter during cluster profile initialization in Matlab.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span> <span class="n">configCluster</span>
+<span class="n">Username</span> <span class="n">on</span> <span class="n">RUDENS</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">jdoe</span><span class="p">):</span> <span class="n">username</span>
+<span class="n">Complete</span><span class="o">.</span>  <span class="n">Default</span> <span class="n">cluster</span> <span class="n">profile</span> <span class="nb">set</span> <span class="n">to</span> <span class="s2">&quot;Rudens R2024a&quot;</span><span class="o">.</span>
+<span class="o">&gt;&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">parcluster</span><span class="p">;</span>
+<span class="o">&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">AdditionalProperties</span><span class="o">.</span><span class="n">UseBeeGFS</span> <span class="o">=</span> <span class="n">false</span>
+<span class="o">&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">saveProfile</span>
+</pre></div>
+</div>
+<p>On the first connection to the cluster, the directory will automatically be changed. It should look similar to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">AdditionalProperties</span><span class="o">.</span><span class="n">RemoteJobStorageLocation</span>
+<span class="n">ans</span> <span class="o">=</span>
+    <span class="s1">&#39;/home/username/.matlab/generic_cluster_jobs/rudens/&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="request-gpu-resource-from-matlab">
+<h3>Request GPU resource from MATLAB<a class="headerlink" href="#request-gpu-resource-from-matlab" title="Link to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">AdditionalProperties</span><span class="o">.</span><span class="n">GPUsPerNode</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">AdditionalProperties</span><span class="o">.</span><span class="n">Feature</span> <span class="o">=</span> <span class="s1">&#39;l40s&#39;</span>
+<span class="o">&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">saveProfile</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="additional-guides">
+<h2>Additional guides<a class="headerlink" href="#additional-guides" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://hpc.rtu.lv/matlabmdcs-hpc/?lang=en">MATLAB Parallel computing server</a></p>
+<p><a class="reference external" href="https://hpc-guide.rtu.lv/appendix.html#ansys-remote-solver-manager-rsm">ANSYS HPC Remote solver setup guide</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="01_waldur.html" class="btn btn-neutral float-left" title="Virtual desktops" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="galaxy.html" class="btn btn-neutral float-right" title="Galaxy portal" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, RTU HPC center.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
