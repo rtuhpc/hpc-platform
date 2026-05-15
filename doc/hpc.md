@@ -60,7 +60,7 @@ Go to our OOD ([https://ood.hpc.rtu.lv/](https://ood.hpc.rtu.lv/)) or press `Acc
 
 ### Virtual desktop autoconfiguration
 
-If you are working from an RTU HPC **virtual desktop** that supports
+If you are working from an WALDUR **virtual desktop** that supports
 autoconfiguration, you do not have to generate or upload SSH keys manually.
 The preinstalled **Configure HPC** helper sets everything up for you with a
 single click — it creates a key pair on the virtual desktop, registers the
@@ -81,7 +81,7 @@ template you deployed does not support autoconfiguration — use
 
 ### SSH access
 
-> **Working from an RTU HPC virtual desktop?** You can skip the manual key
+> **Working from an WALDUR virtual desktop?** You can skip the manual key
 > setup below — use the one-click
 > [Virtual desktop autoconfiguration](#virtual-desktop-autoconfiguration)
 > helper instead.
