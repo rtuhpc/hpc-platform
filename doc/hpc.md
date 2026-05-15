@@ -72,7 +72,7 @@ active *RTU HPC (RUDENS)* allocation in your Waldur project (see
 [Request HPC resource (allocation)](#request-hpc-resource-allocation)).
 
 Full step-by-step instructions are on the Virtual desktops page:
-[Configure HPC connection from the virtual desktop](https://hpc-platforma.rtu.lv/01_waldur.html#configure-hpc-connection).
+[Configure HPC connection from the virtual desktop](https://hpc-platforma.rtu.lv/01_waldur.html#configure-hpc-connection-from-the-virtual-desktop).
 
 If your virtual desktop does not have a **Configure HPC** icon, the
 template you deployed does not support autoconfiguration — use
