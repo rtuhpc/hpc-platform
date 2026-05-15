@@ -26,9 +26,8 @@ The following videos are in Latvian.
 
 
 ---
-
-
-## Configure HPC connection from the virtual desktop [](#configure-hpc-connection "Link to this heading")
+##
+## Configure HPC connection from the virtual desktop
 
 Once your virtual desktop is running, you can connect it to the HPC cluster
 (supercomputer) with a single click. The **Configure HPC** helper is preinstalled
