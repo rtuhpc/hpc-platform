@@ -25,6 +25,7 @@ The following videos are in Latvian.
 <iframe src="https://slides.com/viktorszagorskis-1/rtu-hpc/embed?share=hidden" width="576" height="420" title="RTU HPC" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
+---
 
 
 ## Configure HPC connection from the virtual desktop [](#configure-hpc-connection "Link to this heading")
