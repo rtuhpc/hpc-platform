@@ -58,7 +58,33 @@ Go to our OOD ([https://ood.hpc.rtu.lv/](https://ood.hpc.rtu.lv/)) or press `Acc
 ![OOD](images/web-terminal.png)
 ![terminal](images/web_terminal.png)
 
+### Virtual desktop autoconfiguration
+
+If you are working from an RTU HPC **virtual desktop** that supports
+autoconfiguration, you do not have to generate or upload SSH keys manually.
+The preinstalled **Configure HPC** helper sets everything up for you with a
+single click — it creates a key pair on the virtual desktop, registers the
+public key with your Waldur account, discovers your cluster login name and
+adds **HPC data** and **SSH to HPC** shortcuts to the desktop.
+
+Prerequisites are the same as for SSH access below: you must already have an
+active *RTU HPC (RUDENS)* allocation in your Waldur project (see
+[Request HPC resource (allocation)](#request-hpc-resource-allocation)).
+
+Full step-by-step instructions are on the Virtual desktops page:
+[Configure HPC connection from the virtual desktop](https://hpc-platforma.rtu.lv/01_waldur.html#configure-hpc-connection).
+
+If your virtual desktop does not have a **Configure HPC** icon, the
+template you deployed does not support autoconfiguration — use
+[Web-terminal access](#web-terminal-access) or the manual
+[SSH access](#ssh-access) steps below instead.
+
 ### SSH access
+
+> **Working from an RTU HPC virtual desktop?** You can skip the manual key
+> setup below — use the one-click
+> [Virtual desktop autoconfiguration](#virtual-desktop-autoconfiguration)
+> helper instead.
 
 You need an SSH key to connect to the RUDENS login node. Passwords are not supported for the accounts requested through the self-service portal. Follow the described steps to prepere a SSH key.
 
