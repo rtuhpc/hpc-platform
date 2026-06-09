@@ -133,7 +133,7 @@ Change 'username' to your actual login name, which you can see in the resource v
 
 Ready-to-run examples on RUDENS — educational tasks, ANSYS Fluent and
 Blender workflows, OpenCL kernels, and the EuroCC Latvia demo-cases
-catalogue — are collected on the dedicated [HPC examples](examples.html)
+catalogue — are collected on the dedicated [HPC examples](https://hpc-platforma.rtu.lv/examples.html)
 page.
 
 ## Parallel MATLAB
