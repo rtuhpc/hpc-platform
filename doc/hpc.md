@@ -129,25 +129,12 @@ Change 'username' to your actual login name, which you can see in the resource v
 
 [Follow the link to the user guide on using the HPC cluster RUDENS.](https://hpc-guide.rtu.lv)
 
-## HPC demo-cases
+## HPC examples
 
-Reusable examples (with codes) of HPC applications in various scientific domains: [https://gitlab.com/eurocc-latvia](https://gitlab.com/eurocc-latvia).
-
-- Assessment of Wind Loads Using HPC
-- Building Management System AI Model
-- Crystal Growth
-- Dielectric Constant Measurement Uncertainty Estimation using HPC
-- Estimation of RF to DC Converter Power Conversion Efficiency Sensitivity to Component Parameters
-- HPC Array Job Example
-- Metagenomic analysis
-- Metal Casting HPC Model
-- MHD Mixing HPC Model
-- Microchannel Flow in a Heated Plate
-- Oceanographic HPDA
-- Room Thermal Comfort and Epidemiological Safety
-- Seasonal Weather Forecast HPDA
-
-Demonstrations are prepared by EuroCC National HPC Competence Centre of Latvia.
+Ready-to-run examples on RUDENS — educational tasks, ANSYS Fluent and
+Blender workflows, OpenCL kernels, and the EuroCC Latvia demo-cases
+catalogue — are collected on the dedicated [HPC examples](examples.html)
+page.
 
 ## Parallel MATLAB
 Parallel MATLAB server virtually widens resources available for MATLAB (number of CPU’s, memory, location) by directing tasks to the HPC cluster.
