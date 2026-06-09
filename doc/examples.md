@@ -1,17 +1,10 @@
-<!--
-  Save this file as `examples.md` in the docs source root and add `examples`
-  to the main toctree in index.md (see index-toctree-edit.md in this folder).
-  Then shrink the old "## HPC demo-cases" section in hpc.md to the pointer in
-  hpc-demo-cases-replacement.md.
--->
-
 # HPC examples
 
 A growing collection of ready-to-run examples on RUDENS. Each repository
 has its own README with the exact commands to clone, build and submit.
 
 Prerequisite: an active *RTU HPC (RUDENS)* allocation
-(see [Request HPC resource (allocation)](hpc.html#request-hpc-resource-allocation))
+(see [Request HPC resource](hpc.html#request-hpc-resource-allocation))
 and a working cluster connection
 (see [Connect to the HPC cluster](hpc.html#connect-to-the-hpc-cluster)).
 
@@ -19,7 +12,7 @@ and a working cluster connection
 
 - [HPC introductory examples](https://github.com/rtuhpc/workshop) — introductory tasks covering job submission, parametric array jobs, CUDA, MPI, and a toy GPT (LLM). *Contributed by Lauris Cikovskis.*
 - [Rotating propeller CFD](https://github.com/rtuhpc/HPC-example-ANSYS) — coupled CFD and structural analysis of a rotating propeller using ANSYS Fluent. *Contributed by Sabine Upnere.*
-- [Water-gravity flow simulation](https://github.com/rtuhpc/HPC-example-BLENDER) — Blender/Mantaflow fluid simulations driven from a PBS script. *Contributed by Maris Kalinka.*
+- [Water-gravity flow simulation](https://github.com/rtuhpc/HPC-example-BLENDER) — Mantaflow water simulations in Blender, run headless on the cluster *Contributed by Maris Kalinka.*
 - [OpenCL parallel linear algebra](https://github.com/Igor-Schukin/opencl-test) — GPU-vs-CPU benchmarks for vector sum, matrix multiplication and Gauss elimination. *Contributed by Igor Schukin.*
 
 ### Demo-cases from EuroCC Latvia
@@ -45,6 +38,4 @@ National HPC Competence Centre of Latvia,
 ## Contributing your own example
 
 Have a runnable HPC example to share? Contact the RTU HPC Centre to have it
-added under [github.com/rtuhpc](https://github.com/rtuhpc), or open a
-request against this documentation referencing your own repository —
-community contributions are listed with an author credit.
+added under [github.com/rtuhpc](https://github.com/rtuhpc).
