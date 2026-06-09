@@ -4,9 +4,9 @@ A growing collection of ready-to-run examples on RUDENS. Each repository
 has its own README with the exact commands to clone, build and submit.
 
 Prerequisite: an active *RTU HPC (RUDENS)* allocation
-(see [Request HPC resource](hpc.html#request-hpc-resource-allocation))
+(see [Request HPC resource](https://hpc-platforma.rtu.lv/hpc.html#request-hpc-resource-allocation))
 and a working cluster connection
-(see [Connect to the HPC cluster](hpc.html#connect-to-the-hpc-cluster)).
+(see [Connect to the HPC cluster](https://hpc-platforma.rtu.lv/hpc.html#connect-to-the-hpc-cluster)).
 
 ## Examples for educational purposes
 
