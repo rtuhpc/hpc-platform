@@ -19,6 +19,7 @@ This page provides instructions for using different tools and interfaces availab
    02_jupyter_hub.md
    seqr.md
    lti.md
+   examples.md
    learning_resources.md
 
 The HPC platform provides students, educators, researchers, and industry professionals with a single point of access to virtual computing infrastructure to support learning and development of advanced digital skills in Latvia.
