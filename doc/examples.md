@@ -1,6 +1,6 @@
 # HPC examples
 
-A growing collection of ready-to-run examples on RUDENS. Each repository
+A growing collection of ready-to-run examples on the HPC cluster RUDENS. Each repository
 has its own README with the exact commands to clone, build and submit.
 
 Prerequisite: an active *RTU HPC (RUDENS)* allocation
@@ -15,7 +15,7 @@ and a working cluster connection
 - [Water-gravity flow simulation](https://github.com/rtuhpc/HPC-example-BLENDER) — Mantaflow water simulations in Blender, run headless on the cluster *Contributed by Maris Kalinka.*
 - [OpenCL parallel linear algebra](https://github.com/Igor-Schukin/opencl-test) — GPU-vs-CPU benchmarks for vector sum, matrix multiplication and Gauss elimination. *Contributed by Igor Schukin.*
 
-### Demo-cases from EuroCC Latvia
+## Demo-cases from EuroCC Latvia
 
 Additional reusable examples (codes included) prepared by the EuroCC
 National HPC Competence Centre of Latvia,
