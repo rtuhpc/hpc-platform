@@ -1,4 +1,4 @@
-Please start by clicking on [Sign in with RTU HPC]
+Please start by clicking on [Sign in with HPC NET]
 ![](images/waldur-login.png)
   
 By selecting the MyAccessID method, you should be able to authenticate with your university login details or eEIDAS (eParaksts for Latvian citizens).
