@@ -32,6 +32,7 @@ After opening the link, you will see a confirmation page where you need to click
 ![](images/waldur-keycloak5_laife.png)
 
 On the next page, you will see a message confirming that your email address has been successfully verified.
+
 ![](images/waldur-keycloak6_laife.png)
 
 After that, return to the previous page and click "If you already verified the email in a different browser".
