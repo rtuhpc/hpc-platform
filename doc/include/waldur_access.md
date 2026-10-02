@@ -8,10 +8,10 @@ In LAIFE window under "Latvia" list search for your university's identity provid
 ![](images/waldur-laife0.png)
   
 Similar to University of Latvia  
-![](images/waldur-laife0_2.png)
+![](images/waldur-laife0_1.png)
 
 and Riga Stradiņš University  
-![](images/waldur-laife0_1.png)
+![](images/waldur-laife0_2.png)
 
 You will be redirected to your organization's identity provider authorization portal, which in this case is RTU ORTUS. Please follow all authentication steps, beginning with your login credentials:
 ![](images/waldur-laife1.png)
